@@ -7,6 +7,8 @@
     --main-secondary: #929292;
     --text-primary: #6c6c6c;
     --text-secondary: #d7d7d7;
+    --text-color: #242424;
+
     --white: rgb(255, 255, 255);
 }
 
@@ -14,5 +16,38 @@
     margin: 0;
     padding: 0;
     /*border: none;*/
+}
+
+body {
+    font-family: Space Mono, sans-serif;
+    font-weight: 400;
+    background-color: var(--main-secondary);
+    color: var(--text-color);
+}
+
+
+/* headdings */
+h1,
+h2 {
+    font-family: Courier Prime, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.heading {
+    text-align: center;
+    color: var(--text-secondary);
+    background-color: var(--main-primary);
+    max-width: 800px;
+    border: 4px solid var(--text-primary);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+
 }
 
