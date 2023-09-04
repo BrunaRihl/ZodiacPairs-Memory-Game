@@ -58,7 +58,13 @@ button {
     font-family: Courier Prime, sans-serif;
     font-size: 120%;
     border-radius: 10px;
-    padding:5px;
-    height: 2rem;
-  
-  }
+    padding: 5px;
+}
+
+/* Style the Play button to be larger */
+
+#play {
+    font-size: 30px;
+    background-color: var(--main-primary);
+
+}
