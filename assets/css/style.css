@@ -104,3 +104,18 @@ button {
     background-color: var(--main-primary);
 
 }
+
+/* game board*/
+
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.board > * {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
