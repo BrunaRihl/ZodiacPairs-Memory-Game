@@ -2,7 +2,7 @@ const board = document.getElementById("board"); // Get the game board element.
 const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
-// Function to build the game board.
+/* Function to build the game board */
 
 function buildBoard(list){
     for (const index in list) {
@@ -32,6 +32,8 @@ function openModal(loadModal) {
 
     modal.style.display = 'block';
 }
+
+/* Function to close the modal window */
 
 function closeModal(exitModal) {
     let modal = document.getElementById(exitModal);
