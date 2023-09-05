@@ -196,7 +196,7 @@ button {
 
 .content-modal {
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 1%;
     max-width: 800px;
     background-color: var(--main-secondary);
     border-radius: 5px;
@@ -217,4 +217,6 @@ button {
 .modal-text {
     padding: 10px;
 }
-
+ .modal-text img{
+    width : 400px;
+ }
