@@ -25,7 +25,7 @@ body {
     color: var(--text-color);
 }
 
-  
+
 /* headings */
 
 h1,
@@ -58,7 +58,7 @@ h2 {
     max-width: 800px;
     display: flex;
     justify-content: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 
 }
 
@@ -82,9 +82,9 @@ h2 {
     padding: 10px;
 }
 
-#info-btn{
-        text-align: center;
-        margin-top: 5px;    
+#info-btn {
+    text-align: center;
+    margin-top: 5px;
 }
 
 button {
@@ -111,11 +111,71 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: center;
+    margin: 0 auto;
+
 }
 
-.board > * {
-    width: 150px;
-    height: 150px;
+.board>* {
+    width: 120px;
+    height: 120px;
     margin: 10px;
+
 }
 
+.card-back {
+    background-color: burlywood;
+}
+
+.card-back h2 {
+    color: black;
+}
+
+.taurus {
+    background-color: red;
+}
+
+.aries {
+    background-color: blue;
+}
+
+.gemini {
+    background-color: aquamarine;
+}
+
+.cancer {
+    background-color: blueviolet;
+}
+
+.leo {
+    background-color: brown;
+}
+
+.virgo {
+    background-color: chocolate;
+}
+
+.pisces {
+    background-color: beige;
+}
+
+.scorpio {
+    background-color: orange;
+}
+
+.capricorn {
+    background-color: black;
+}
+
+.aquarius {
+    background-color: pink;
+}
+
+.sagitarius {
+    background-color: yellow;
+}
+
+.libra {
+    background-color: greenyellow;
+}
