@@ -25,3 +25,16 @@ function initGame() {
 
  initGame();
 
+/* Function to open the modal window */
+
+function openModal(loadModal) {
+    let modal = document.getElementById(loadModal);
+
+    modal.style.display = 'block';
+}
+
+function closeModal(exitModal) {
+    let modal = document.getElementById(exitModal);
+
+    modal.style.display = 'none';
+}

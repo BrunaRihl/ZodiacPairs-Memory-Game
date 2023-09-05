@@ -33,7 +33,7 @@
 
             <div class="game-stats">
                 <div id="game-stats-top">
-                    <button>How to play?</button>
+                    <button onclick="openModal('vis-modal')">How to play?</button>
                     <button id="play">Play!</button>
                     <div>
                         Score:<span>0</span>
@@ -43,9 +43,19 @@
 
             <!-- Rules and score window section -->
 
-            <div>
-                <div>
-                    <h2>How to play?</h2>
+            <div id="vis-modal" class="modal">
+                <div class="content-modal">
+                    <div class="head-modal">
+                        <h1>Rules</h1>
+                        <span class="modal-close-window" onclick="closeModal('vis-modal')">X</span>
+                    </div>
+                    <div class="modal-text">
+                        <h2>How to play?</h2>
+                        <p>...</p>
+                        <h2>Scores</h2>
+                        <p>...</p>
+                    </div>
+                    
                 </div>
             </div>
 
