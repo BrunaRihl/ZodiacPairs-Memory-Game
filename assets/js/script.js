@@ -31,6 +31,7 @@ function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
 
     modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 }
 
 /* Function to close the modal window */
@@ -39,4 +40,5 @@ function closeModal(exitModal) {
     let modal = document.getElementById(exitModal);
 
     modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
 }
