@@ -9,11 +9,11 @@ let cardOne, cardTwo;
 
 /* Function to build the game board */
 
-function buildBoard(list){
+function buildBoard(list) {
     for (const index in list) {
         board.insertAdjacentHTML(
-        "beforeend", 
-        `<div class="card-back" data-name=${list[index]}></div>`
+            "beforeend",
+            `<div class="card-back" data-name=${list[index]}></div>`
         )
     };
 
@@ -22,12 +22,12 @@ function buildBoard(list){
 }
 
 
-/* Function called when a card is clicked to flip card*/
+/* Function called when a card is clicked to flip card */
 
-function flipCard(event){
+function flipCard(event) {
     if (lockBoard) return;
     if (this === cardOne) return;
-    
+
     this.classList.add(event.target.dataset.name);
 
     if (!flipped) {
@@ -35,10 +35,42 @@ function flipCard(event){
         cardOne = this;
         return;
     }
-    
+
     cardTwo = this;
     flipped = false;
 
+    checkForMatch();
+
+}
+/* Function to check if two flipped cards match */
+
+function checkForMatch() {
+    let isMatch = cardOne.dataset.name === cardTwo.dataset.name;
+
+    if (isMatch) {
+        match();
+    } else {
+        unmatch();
+    }
+}
+
+/* Function called when cards match */
+
+function match() {
+    cardOne.removeEventListener('click', flipCard);
+    cardTwo.removeEventListener('click', flipCard);
+}
+
+/* Function called when cards don't match. */
+
+function unmatch() {
+    lockBoard = true;
+
+    setTimeout(() => {
+        cardOne.classList.remove(cardOne.dataset.name);
+        cardTwo.classList.remove(cardTwo.dataset.name);
+
+    }, 1500);
 }
 
 /* Function to initialize the game */
@@ -46,9 +78,9 @@ function flipCard(event){
 function initGame() {
     board.innerHTML = '';
     buildBoard(deck);
- }
+}
 
- initGame();
+initGame();
 
 /* Function to open the modal window */
 
