@@ -59,6 +59,7 @@ function checkForMatch() {
 function match() {
     cardOne.removeEventListener('click', flipCard);
     cardTwo.removeEventListener('click', flipCard);
+    resetBoard()
 }
 
 /* Function called when cards don't match. */
@@ -69,10 +70,19 @@ function unmatch() {
     setTimeout(() => {
         cardOne.classList.remove(cardOne.dataset.name);
         cardTwo.classList.remove(cardTwo.dataset.name);
-
+        resetBoard()
     }, 1500);
+    
 }
 
+/*Function to prepare the board for the next turn */
+
+function resetBoard() {     
+    flipped = false;
+    lockBoard = false;
+    cardOne = null;
+    cardTwo = null;
+ }
 /* Function to initialize the game */
 
 function initGame() {
