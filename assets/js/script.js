@@ -5,6 +5,7 @@ const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 let flipped = false;
 let lockBoard = false;
 let cardOne, cardTwo;
+let pairsMatch = 0;
 
 
 /* Function to build the game board */
@@ -49,9 +50,13 @@ function checkForMatch() {
 
     if (isMatch) {
         match();
+        pairsMatch++
+        if (pairsMatch === signs.length) {
+            console.log("You Win!!");
+        };
     } else {
         unmatch();
-    }
+    };
 }
 
 
