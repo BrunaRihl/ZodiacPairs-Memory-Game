@@ -40,8 +40,8 @@ function flipCard(event) {
     flipped = false;
 
     checkForMatch();
-
 }
+
 /* Function to check if two flipped cards match */
 
 function checkForMatch() {
@@ -53,6 +53,7 @@ function checkForMatch() {
         unmatch();
     }
 }
+
 
 /* Function called when cards match */
 
@@ -72,8 +73,8 @@ function unmatch() {
         cardTwo.classList.remove(cardTwo.dataset.name);
         resetBoard()
     }, 1500);
-    
 }
+
 
 /*Function to prepare the board for the next turn */
 
@@ -83,14 +84,29 @@ function resetBoard() {
     cardOne = null;
     cardTwo = null;
  }
+
+
 /* Function to initialize the game */
 
 function initGame() {
     board.innerHTML = '';
-    buildBoard(deck);
+    list = randomCards(deck);
+    buildBoard(list);
 }
 
 initGame();
+
+
+/* Shuffles the deck of cards randomly */
+
+function randomCards(deck) {
+    for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+    }
+    return deck;
+}
+
 
 /* Function to open the modal window */
 
