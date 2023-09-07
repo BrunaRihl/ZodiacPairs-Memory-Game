@@ -37,7 +37,7 @@
             <div class="game-stats">
                 <div id="game-stats-top">
                     <button onclick="openModal('vis-modal-rules')">How to play?</button>
-                    <button id="play">Play!</button>
+                    <button id="play" onclick="restartGame()">Play!</button>
                     <div>
                         Score:<span>0</span>
                     </div>
@@ -53,14 +53,14 @@
             <div class="game-stats">
                 <div id="game-stats-bottom">
                     <div id="match">
-                        <div> <span>Matched:</span><span>0</span></div>
-                        <div> <span>Unmatched:</span><span>0</span></div>
+                        <div><span>Matched:</span><span>0</span></div>
+                        <div><span>Unmatched:</span><span>0</span></div>
                     </div>
                     <div id="time">
                         <span>Time:</span><span>0</span>
                     </div>
                     <div>
-                        <button>Restart</button>
+                        <button onclick="restartGame()">Restart</button>
                     </div>
                 </div>
             </div>
@@ -110,10 +110,10 @@
             <!--  Finish game modal window-->
 
             <div id="win" class="modal">
-                <div class="content-modal">
+                <div class="content-modal-win">
                     <div class="head-modal">
                         <h1>You won!!</h1>
-                        <span class="modal-close-window" onclick="closeModal('win')">X</span>
+                        <span class="modal-close-window" onclick="closeModal('win'); restartGame();">X</span>
                     </div>
                     <div class="modal-text">
                         <h2>Your score is <span>0</span> !!</h2>

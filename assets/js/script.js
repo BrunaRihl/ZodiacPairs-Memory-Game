@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
+const signs = ["aries", "taurus", "gemini"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -101,6 +101,11 @@ function initGame() {
 
 initGame();
 
+
+function restartGame() {
+    pairsMatch = 0;
+    initGame()
+}
 
 /* Shuffles the deck of cards randomly */
 

@@ -204,6 +204,15 @@ button {
     text-align: center;
 }
 
+.content-modal-win {
+    margin: 0 auto;
+    margin-top: 18%;
+    max-width: 400px;
+    background-color: var(--main-secondary);
+    border-radius: 5px;
+    text-align: center;
+}
+
 .head-modal {
     padding: 1px 10px;
     display: flex;
