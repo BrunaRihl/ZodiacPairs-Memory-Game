@@ -52,7 +52,7 @@ function checkForMatch() {
         match();
         pairsMatch++
         if (pairsMatch === signs.length) {
-            console.log("You Win!!");
+            openModal("win")
         };
     } else {
         unmatch();
