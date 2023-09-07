@@ -1,11 +1,15 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini"];
+const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
 let lockBoard = false;
 let cardOne, cardTwo;
 let pairsMatch = 0;
+let timerGame;
+let seconds = 0;
+let timeRunning = false;
+let finalTime = undefined;
 
 
 /* Function to build the game board */
@@ -52,6 +56,9 @@ function checkForMatch() {
         match();
         pairsMatch++
         if (pairsMatch === signs.length) {
+            finalTime = seconds;
+            console.log(finalTime)
+            stopChronometer();
             openModal("win")
         };
     } else {
@@ -83,12 +90,12 @@ function unmatch() {
 
 /*Function to prepare the board for the next turn */
 
-function resetBoard() {     
+function resetBoard() {
     flipped = false;
     lockBoard = false;
     cardOne = null;
     cardTwo = null;
- }
+}
 
 
 /* Function to initialize the game */
@@ -97,15 +104,10 @@ function initGame() {
     board.innerHTML = '';
     list = randomCards(deck);
     buildBoard(list);
+
 }
 
 initGame();
-
-
-function restartGame() {
-    pairsMatch = 0;
-    initGame()
-}
 
 /* Shuffles the deck of cards randomly */
 
@@ -115,6 +117,42 @@ function randomCards(deck) {
         [deck[i], deck[j]] = [deck[j], deck[i]];
     }
     return deck;
+}
+
+function restartGame() {
+    resetChronometer();
+    pairsMatch = 0;
+    initGame()
+    activateChronometer()
+
+}
+
+/* Function to start the timer */
+
+function activateChronometer() {
+    if (!timeRunning) {
+        timerGame = setInterval(() => {
+            seconds++;
+            document.getElementById("time").innerText = "Seconds:" + seconds + "s";
+        }, 1000);
+        timeRunning = true;
+    }
+}
+
+/* Function to stop the timer */
+
+function stopChronometer() {
+    clearInterval(timerGame);
+    timeRunning = false;
+}
+
+/* Function to stop the timer */
+
+function resetChronometer() {
+    clearInterval(timerGame);
+    seconds = 0;
+    document.getElementById('time').textContent = '0s';
+    timeRunning = false;
 }
 
 
