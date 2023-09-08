@@ -107,8 +107,6 @@ function initGame() {
 
 }
 
-initGame();
-
 /* Shuffles the deck of cards randomly */
 
 function randomCards(deck) {
