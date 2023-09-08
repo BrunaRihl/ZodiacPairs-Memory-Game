@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div>
-                        <span>Time:</span><span class="time">0</span>s
+                        <span>Time:</span><span Id="time">0</span>s
                     </div>
                     <div>
                         <button onclick="restartGame()">Restart</button>
@@ -115,13 +115,13 @@
             <div id="win" class="modal">
                 <div class="content-modal-win">
                     <div class="head-modal">
-                        <h1>You won!!</h1>
+                        <h1 id="final"></h1>
                         <span class="modal-close-window" onclick="closeModal('win');">X</span>
                     </div>
                     <div class="modal-text">
-                        <h2>Your score is <span>0</span> !!</h2>
-                        <p>Total <span>0</span> moves</p>
-                        <p>Total <span>0</span> seconds</p>
+                        <h2>Your score is <span id="final-score"></span> !!</h2>
+                        <p>Total <span id="final-open">0</span> moves</p>
+                        <p>Total <span id="final-time">0</span> seconds</p>
                     </div>
                 </div>
             </div>
