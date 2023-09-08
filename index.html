@@ -39,7 +39,7 @@
                     <button onclick="openModal('vis-modal-rules')">How to play?</button>
                     <button id="play" onclick="restartGame()">Play!</button>
                     <div>
-                        Score:<span>0</span>
+                        Score:<span id="score">0</span>
                     </div>
                 </div>
             </div>
@@ -52,12 +52,15 @@
 
             <div class="game-stats">
                 <div id="game-stats-bottom">
-                    <div id="match">
-                        <div><span>Matched:</span><span>0</span></div>
-                        <div><span>Unmatched:</span><span>0</span></div>
+                    <div id="matches">
+                        <div >
+                            <span>Matched:</span><span id="match">0</span></div>
+                        <div >
+                            <span>Unmatched:</span><span id="unmatch">0</span>
+                        </div>
                     </div>
-                    <div id="time">
-                        Seconds:</span>0s<span>
+                    <div>
+                        <span>Time:</span><span class="time">0</span>s
                     </div>
                     <div>
                         <button onclick="restartGame()">Restart</button>

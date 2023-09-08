@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
+const signs = ["aries", "taurus", "gemini"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -10,7 +10,8 @@ let timerGame;
 let seconds = 0;
 let timeRunning = false;
 let finalTime = undefined;
-
+let pairsUnmatch = 0;
+let finalScore = 0;
 
 /* Function to build the game board */
 
@@ -78,6 +79,7 @@ function match() {
 /* Function called when cards don't match. */
 
 function unmatch() {
+    pairsUnmatch++;
     lockBoard = true;
 
     setTimeout(() => {
@@ -120,6 +122,7 @@ function randomCards(deck) {
 function restartGame() {
     resetChronometer();
     pairsMatch = 0;
+    pairsUnmatch = 0;
     initGame()
     activateChronometer()
 
@@ -131,7 +134,11 @@ function activateChronometer() {
     if (!timeRunning) {
         timerGame = setInterval(() => {
             seconds++;
-            document.getElementById("time").innerText = "Seconds:" + seconds + "s";
+            document.getElementsByClassName("time").innerText = seconds;
+            document.getElementById("match").innerText = pairsMatch;
+            document.getElementById("unmatch").innerText = pairsUnmatch;
+            finalScore = (pairsMatch * 50) - (pairsUnmatch * 5) - seconds;
+            document.getElementById("score").innerText = finalScore;
         }, 1000);
         timeRunning = true;
     }
@@ -149,7 +156,7 @@ function stopChronometer() {
 function resetChronometer() {
     clearInterval(timerGame);
     seconds = 0;
-    document.getElementById('time').textContent = '0s';
+    document.getElementsByClassName('time').textContent = '0s';
     timeRunning = false;
 }
 
