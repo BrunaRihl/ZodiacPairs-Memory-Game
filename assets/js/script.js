@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini"];
+const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -71,7 +71,10 @@ function checkForMatch() {
 
 function match() {
     cardOne.removeEventListener('click', flipCard);
+    cardOne.innerHTML = `<h2>${cardOne.dataset.name}</h2>`
     cardTwo.removeEventListener('click', flipCard);
+    cardTwo.innerHTML = `<h2>${cardTwo.dataset.name}</h2>`
+
     resetBoard()
 }
 

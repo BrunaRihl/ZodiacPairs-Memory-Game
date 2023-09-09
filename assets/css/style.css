@@ -121,6 +121,7 @@ button {
     width: 120px;
     height: 120px;
     margin: 10px;
+    border-radius: 4%;
 }
 
 /* cards */
@@ -133,7 +134,9 @@ button {
 }
 
 .card-back h2 {
+    margin: 5px 5px;
     color: black;
+    font-size: 80%;
 }
 
 .taurus {
