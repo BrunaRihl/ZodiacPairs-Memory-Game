@@ -137,51 +137,75 @@ button {
 }
 
 .taurus {
-    background-color: red;
+    background-image: url(../images/cards/taurus.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .aries {
-    background-color: blue;
+    background-image: url(../images/cards/aries.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .gemini {
-    background-color: aquamarine;
+    background-image: url(../images/cards/gemini.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .cancer {
-    background-color: blueviolet;
+    background-image: url(../images/cards/cancer.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .leo {
-    background-color: brown;
+    background-image: url(../images/cards/leo.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .virgo {
-    background-color: chocolate;
+    background-image: url(../images/cards/virgo.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .pisces {
-    background-color: beige;
+    background-image: url(../images/cards/pisces.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .scorpio {
-    background-color: orange;
+    background-image: url(../images/cards/scorpio.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .capricorn {
-    background-color: black;
+    background-image: url(../images/cards/capricorn.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .aquarius {
-    background-color: pink;
+    background-image: url(../images/cards/aquarius.jpg);
+    background-position: center;
+    background-size: cover
 }
 
 .sagitarius {
-    background-color: yellow;
+    background-image: url(../images/cards/sagitarius.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .libra {
-    background-color: greenyellow;
+    background-image: url(../images/cards/libra.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* modal window */
