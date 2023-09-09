@@ -126,7 +126,10 @@ button {
 /* cards */
 
 .card-back {
-    background-color: burlywood;
+    background-image: url(../images/cards/card-back.png);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .card-back h2 {
