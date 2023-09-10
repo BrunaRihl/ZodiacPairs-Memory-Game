@@ -13,8 +13,9 @@ let finalTime = undefined;
 let pairsUnmatch = 0;
 let finalScore = 0;
 
-/* Function to build the game board */
-
+/**
+ * Function to build the game board 
+ */
 function buildBoard(list) {
     for (const index in list) {
         board.insertAdjacentHTML(
@@ -28,8 +29,9 @@ function buildBoard(list) {
 }
 
 
-/* Function called when a card is clicked to flip card */
-
+/**
+ * Function called when a card is clicked to flip card 
+ */
 function flipCard(event) {
     if (lockBoard) return;
     if (this === cardOne) return;
@@ -48,8 +50,10 @@ function flipCard(event) {
     checkForMatch();
 }
 
-/* Function to check if two flipped cards match */
 
+/**
+ * Function to check if two flipped cards match 
+ */
 function checkForMatch() {
     let isMatch = cardOne.dataset.name === cardTwo.dataset.name;
 
@@ -67,8 +71,9 @@ function checkForMatch() {
 }
 
 
-/* Function called when cards match */
-
+/**
+ * Function called when cards match 
+ */
 function match() {
     cardOne.removeEventListener('click', flipCard);
     cardOne.innerHTML = `<h2>${cardOne.dataset.name}</h2>`
@@ -78,8 +83,10 @@ function match() {
     resetBoard()
 }
 
-/* Function called when cards don't match. */
 
+/** 
+ * Function called when cards don't match. 
+ */
 function unmatch() {
     pairsUnmatch++;
     lockBoard = true;
@@ -92,8 +99,9 @@ function unmatch() {
 }
 
 
-/*Function to prepare the board for the next turn */
-
+/** 
+*Function to prepare the board for the next turn 
+*/
 function resetBoard() {
     flipped = false;
     lockBoard = false;
@@ -102,17 +110,19 @@ function resetBoard() {
 }
 
 
-/* Function to initialize the game */
-
+/** 
+* Function to initialize the game 
+*/
 function initGame() {
     board.innerHTML = '';
     list = randomCards(deck);
     buildBoard(list);
-
 }
 
-/* Shuffles the deck of cards randomly */
 
+/**
+ * Shuffles the deck of cards randomly 
+ */
 function randomCards(deck) {
     for (let i = deck.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -121,17 +131,22 @@ function randomCards(deck) {
     return deck;
 }
 
+
+/** 
+ * Function to restart game, time ans scores 
+ */
 function restartGame() {
     resetChronometer();
     pairsMatch = 0;
     pairsUnmatch = 0;
     initGame()
     activateChronometer()
-
 }
 
-/* Function to start the timer */
 
+/**  
+ * Function to start the timer 
+ */
 function activateChronometer() {
     if (!timeRunning) {
         timerGame = setInterval(() => {
@@ -146,15 +161,19 @@ function activateChronometer() {
     }
 }
 
-/* Function to stop the timer */
 
+/**
+ *  Function to stop the timer 
+ */
 function stopChronometer() {
     clearInterval(timerGame);
     timeRunning = false;
 }
 
-/* Function to stop the timer */
 
+/** 
+ * Function to reset the timer
+ */
 function resetChronometer() {
     clearInterval(timerGame);
     seconds = 0;
@@ -163,17 +182,19 @@ function resetChronometer() {
 }
 
 
-/* Function to open the modal window */
-
+/** 
+ * Function to open the modal window
+ */
 function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
     finalScore = finalScore - seconds
     totalOpen = pairsMatch + pairsUnmatch;
-    if (finalScore < 0){
+    if (finalScore < 0) {
         document.getElementById("final").innerText = 'You Lost :(';
     } else {
         document.getElementById("final").innerText = 'You Won!!!';
     };
+    
     document.getElementById("final-score").innerText = (finalScore);
     document.getElementById("final-open").innerText = totalOpen;
     document.getElementById("final-time").innerText = seconds;
@@ -181,8 +202,10 @@ function openModal(loadModal) {
     document.body.style.overflow = 'hidden';
 }
 
-/* Function to close the modal window */
 
+/**
+ * Function to close the modal window 
+ */
 function closeModal(exitModal) {
     let modal = document.getElementById(exitModal);
     modal.style.display = 'none';

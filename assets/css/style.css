@@ -130,7 +130,7 @@ button {
     background-image: url(../images/cards/card-back.png);
     background-position: center;
     background-size: cover;
-    
+
 }
 
 .card-back h2 {
@@ -232,6 +232,7 @@ button {
     background-color: var(--main-secondary);
     border-radius: 5px;
     text-align: center;
+    color: var(--text-color);
 }
 
 .content-modal-win {
@@ -244,22 +245,24 @@ button {
 }
 
 .head-modal {
-    padding: 1px 10px;
+    padding: 5px 0px 10px 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid var(--text-secondary) 1px;
 }
 
 .head-modal .modal-close-window {
-   padding: 5px 5px;
-   cursor: pointer;
-   border: solid var(--text-secondary) 1px;;
+    padding: 3%;
+    cursor: pointer;
+    border: solid var(--text-secondary) 1px;
+    background-color: var(--text-primary);
 }
+
 .modal-text {
     padding: 10px;
 }
 
-.modal-text img{
-    width : 90%;
+.modal-text img {
+    width: 90%;
     margin: 10px;
- }
+}
