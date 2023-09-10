@@ -154,7 +154,7 @@ function activateChronometer() {
             document.getElementById("time").innerText = seconds;
             document.getElementById("match").innerText = pairsMatch;
             document.getElementById("unmatch").innerText = pairsUnmatch;
-            finalScore = (pairsMatch * 50) - (pairsUnmatch * 5);
+            finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
             document.getElementById("score").innerText = finalScore;
         }, 1000);
         timeRunning = true;
@@ -194,7 +194,7 @@ function openModal(loadModal) {
     } else {
         document.getElementById("final").innerText = 'You Won!!!';
     };
-    
+
     document.getElementById("final-score").innerText = (finalScore);
     document.getElementById("final-open").innerText = totalOpen;
     document.getElementById("final-time").innerText = seconds;

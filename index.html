@@ -22,19 +22,19 @@
     <body>
         <!--   Heading section -->
         <main>
-            <div class="heading">
+            <header class="heading">
                 <div>
                     <img src="assets/images/logo/logo.jpg" alt="logo">
                     <h2>Challenge your memory with the theme of zodiac constellations.</h2>
                 </div>
-            </div>
+            </header>
             <div id="info-btn">
                 <button onclick="openModal('vis-modal-const')">Discover Zodiac Constellations</button>
             </div>
 
             <!--  Button rules, play and score section -->
 
-            <div class="game-stats">
+            <section class="game-stats">
                 <div id="game-stats-top">
                     <button onclick="openModal('vis-modal-rules')">How to play?</button>
                     <button id="play" onclick="restartGame()">Play!</button>
@@ -42,15 +42,15 @@
                         Score:<span id="score">0</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Game board section -->
 
-            <div id="board" class="board"></div>
+            <section id="board" class="board"></section>
 
             <!-- Timer reset and match section -->
 
-            <div class="game-stats">
+            <section class="game-stats">
                 <div id="game-stats-bottom">
                     <div id="matches">
                         <div >
@@ -66,11 +66,11 @@
                         <button onclick="restartGame()">Restart</button>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Info about constellations modal window -->
 
-            <div id="vis-modal-const" class="modal">
+            <section id="vis-modal-const" class="modal">
                 <div class="content-modal">
                     <div class="head-modal">
                         <h1>The Fascinating World of Constellations and the Zodiac Signs</h1>
@@ -82,11 +82,11 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             <!-- Rules and score window section -->
 
-            <div id="vis-modal-rules" class="modal">
+            <section id="vis-modal-rules" class="modal">
                 <div class="content-modal">
                     <div class="head-modal">
                         <h1>Rules</h1>
@@ -107,12 +107,12 @@
                         <p>Time Deduction: The seconds used during the game are subtracted from the final score.</p>
                     </div>
                 </div>
-            </div>
+            </section>
             
         
             <!--  Finish game modal window-->
 
-            <div id="win" class="modal">
+            <section id="win" class="modal">
                 <div class="content-modal-win">
                     <div class="head-modal">
                         <h1 id="final"></h1>
@@ -124,7 +124,7 @@
                         <p>Total <span id="final-time"></span> seconds</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
                     <script src="assets/js/script.js"></script>
 

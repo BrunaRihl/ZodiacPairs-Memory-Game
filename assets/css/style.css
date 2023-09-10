@@ -89,7 +89,7 @@ h2 {
 
 button {
     cursor: pointer;
-    color: white;
+    color: black;
     background-color: var(--text-secondary);
     font-family: Courier Prime, sans-serif;
     font-size: 120%;
@@ -100,6 +100,7 @@ button {
 /* Style the Play button to be larger */
 
 #play {
+    color: white;
     font-size: 30px;
     background-color: var(--main-primary);
 
@@ -261,6 +262,11 @@ button {
 .modal-text {
     padding: 10px;
 }
+
+.modal-text h2 {
+    margin-top: 10px;
+}
+
 
 .modal-text img {
     width: 90%;
