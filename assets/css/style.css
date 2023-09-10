@@ -258,15 +258,19 @@ footer p {
     text-align: center;
 }
 
+#final {
+font-size: 200%;
+}
+
 .head-modal {
     padding: 5px 0px 10px 20px;
     display: flex;
-    justify-content: space-between;
-    border-bottom: solid var(--text-secondary) 1px;
+    justify-content: flex-end;
+    margin: 8px;
 }
 
 .head-modal .modal-close-window {
-    padding: 3%;
+    padding: 2%;
     cursor: pointer;
     border: solid var(--text-secondary) 1px;
     background-color: var(--text-primary);
@@ -318,7 +322,6 @@ footer p {
     
     #logo {
         width: 200px;
-
     }
 
     .game-stats, header, button {

@@ -28,7 +28,7 @@
                     <h2>Challenge your memory with the theme of zodiac constellations.</h2>
                 </div>
             </header>
-            
+
 
             <!--  Button rules, play and score section -->
 
@@ -74,32 +74,12 @@
                 <div id="board" class="board"></div>
             </section>
 
-            <!-- Info about constellations modal window -->
-
-            <section id="vis-modal-const" class="modal">
-                <div class="content-modal">
-                    <div class="head-modal">
-                        <h1>The Fascinating World of Constellations and the Zodiac Signs</h1>
-                        <span class="modal-close-window" onclick="closeModal('vis-modal-const')">X</span>
-                    </div>
-                    <div class="modal-text">
-                        <p>The constellations of the zodiac signs are groupings of stars that, when observed from Earth,
-                            form distinct patterns in the nighttime sky. They play a significant role in both astrology
-                            and popular culture, where each zodiac sign is associated with a specific constellation.
-                            These constellations provide a unique perspective on personality and human traits, making
-                            them a captivating part of both astrology and popular culture.</p>
-                        <img src="assets/images/constellations/sign-modal-window.jpg" alt="logo">
-                    </div>
-
-                </div>
-            </section>
 
             <!-- Rules and score window section -->
 
             <section id="vis-modal-rules" class="modal">
                 <div class="content-modal">
                     <div class="head-modal">
-                        <h1>Rules</h1>
                         <span class="modal-close-window" onclick="closeModal('vis-modal-rules')">X</span>
                     </div>
                     <div class="modal-text">
@@ -112,12 +92,33 @@
                         <p>The objective of the game is to find all pairs of identical cards in the fewest number of
                             moves and the shortest possible time.</p>
                         <h2>Victory:</h2>
-                        <p> Win by finding all the pairs.</p>
+                        <p>Win by finding all the pairs and achieving a positive score (above zero).</p>
                         <h2>Scoring:</h2>
-                        <p>Matches Found: +20 points!</p>
-                        <p>Unmatched Pairs: -5 points!</p>
+                        <p>Matches Found: +50 points!</p>
+                        <p>Unmatched Pairs: -10 points!</p>
                         <p>Time Deduction: The seconds used during the game are subtracted from the final score.</p>
                     </div>
+                </div>
+            </section>
+
+
+            <!-- Info about constellations modal window -->
+
+            <section id="vis-modal-const" class="modal">
+                <div class="content-modal">
+                    <div class="head-modal">
+                        <span class="modal-close-window" onclick="closeModal('vis-modal-const')">X</span>
+                    </div>
+                    <div class="modal-text">
+                        <h1>The Fascinating World of Constellations and the Zodiac Signs</h1>
+                        <p>The constellations of the zodiac signs are groupings of stars that, when observed from Earth,
+                            form distinct patterns in the nighttime sky. They play a significant role in both astrology
+                            and popular culture, where each zodiac sign is associated with a specific constellation.
+                            These constellations provide a unique perspective on personality and human traits, making
+                            them a captivating part of both astrology and popular culture.</p>
+                        <img src="assets/images/constellations/sign-modal-window.jpg" alt="logo">
+                    </div>
+
                 </div>
             </section>
 
@@ -127,10 +128,10 @@
             <section id="win" class="modal">
                 <div class="content-modal-win">
                     <div class="head-modal">
-                        <h1 id="final"></h1>
                         <span class="modal-close-window" onclick="closeModal('win');">X</span>
                     </div>
                     <div class="modal-text">
+                        <h1 id="final"></h1>
                         <h2>Your score is <span id="final-score"></span> !!</h2>
                         <p>Total <span id="final-open"></span> moves</p>
                         <p>Total <span id="final-time"></span> seconds</p>
@@ -141,8 +142,8 @@
         <footer>
             <p>Developed by Bruna Rihl for Portfolio Project 2 - Code Institute, 2023</p>
         </footer>
-            <script src="assets/js/script.js"></script>
-        
+        <script src="assets/js/script.js"></script>
+
     </body>
 
 </html>
