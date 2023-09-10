@@ -28,25 +28,24 @@
                     <h2>Challenge your memory with the theme of zodiac constellations.</h2>
                 </div>
             </header>
-            <div id="info-btn">
-                <button onclick="openModal('vis-modal-const')">Discover Zodiac Constellations</button>
-            </div>
+            
 
             <!--  Button rules, play and score section -->
 
             <section class="game-stats">
                 <div id="game-stats-top">
                     <button onclick="openModal('vis-modal-rules')">How to play?</button>
-                    <button id="play" onclick="restartGame()">Play!</button>
-                    <div>
-                        Score:<span id="score">0</span>
-                    </div>
+                    <button onclick="openModal('vis-modal-const')">Discover Zodiac Constellations</button>
                 </div>
             </section>
 
-            <!-- Game board section -->
+            <section class="game-stats">
+                <div id="game-stats-play">
+                    <button id="play" onclick="restartGame()">Play!</button>
+                    <button onclick="restartGame()">Restart</button>
+                </div>
 
-            <section id="board" class="board"></section>
+            </section>
 
             <!-- Timer reset and match section -->
 
@@ -61,12 +60,18 @@
                         </div>
                     </div>
                     <div>
-                        <span>Time:</span><span Id="time">0</span>s
+                        Score:<span id="score">0</span>
                     </div>
                     <div>
-                        <button onclick="restartGame()">Restart</button>
+                        <span>Time:</span><span Id="time">0</span>s
                     </div>
                 </div>
+            </section>
+
+            <!-- Game board section -->
+
+            <section>
+                <div id="board" class="board"></div>
             </section>
 
             <!-- Info about constellations modal window -->

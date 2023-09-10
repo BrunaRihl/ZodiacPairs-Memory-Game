@@ -59,7 +59,6 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 #game-stats-top {
@@ -68,7 +67,14 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 1100px;
-    margin: 10px;
+}
+
+#game-stats-play {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
 }
 
 #game-stats-bottom {
@@ -82,11 +88,6 @@ h2 {
     padding: 10px;
 }
 
-#info-btn {
-    text-align: center;
-    margin-top: 5px;
-}
-
 button {
     cursor: pointer;
     color: black;
@@ -95,16 +96,28 @@ button {
     font-size: 120%;
     border-radius: 10px;
     padding: 5px;
+    margin: 5px;
 }
 
-/* Style the Play button to be larger */
 
 #play {
-    color: white;
-    font-size: 30px;
+    font-size: 200%;
+    color: var(--text-secondary);
     background-color: var(--main-primary);
-
 }
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+    color: var(--main-secondary);
+    background-color: #333;
+    max-width: 1100px;
+    margin: auto;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* game board*/
 
@@ -273,6 +286,9 @@ button {
     margin: 10px;
 }
 
+
+/* modal window */
+
 footer p {
     font-size: 80%;
     text-align: center;
@@ -304,6 +320,11 @@ footer p {
         width: 200px;
 
     }
+
+    .game-stats, header, button {
+        font-size: 85%;
+    }
+
 
 }
 
