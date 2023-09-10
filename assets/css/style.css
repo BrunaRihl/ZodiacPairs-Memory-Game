@@ -266,3 +266,14 @@ button {
     width: 90%;
     margin: 10px;
 }
+
+/* On screens that are 600px or less*/
+
+@media screen and (max-width: 600px) {
+    .board>* {
+        width: 85px;
+        height: 85px;
+        margin: 5px;
+    }
+    
+}
