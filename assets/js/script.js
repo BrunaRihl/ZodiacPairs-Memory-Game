@@ -151,10 +151,11 @@ function activateChronometer() {
     if (!timeRunning) {
         timerGame = setInterval(() => {
             seconds++;
+            finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
+
             document.getElementById("time").innerText = seconds;
             document.getElementById("match").innerText = pairsMatch;
             document.getElementById("unmatch").innerText = pairsUnmatch;
-            finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
             document.getElementById("score").innerText = finalScore;
         }, 1000);
         timeRunning = true;

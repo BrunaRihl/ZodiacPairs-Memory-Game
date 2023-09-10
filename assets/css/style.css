@@ -15,7 +15,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: none;*/
+    border: none;
 }
 
 body {
@@ -137,7 +137,7 @@ button {
 .card-back h2 {
     margin: 5px 5px;
     color: black;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .taurus {
@@ -273,13 +273,38 @@ button {
     margin: 10px;
 }
 
+footer p {
+    font-size: 80%;
+    text-align: center;
+    color: var(--main-secondary);
+    background-color: #333;
+    max-width: 1100px;
+    margin: auto;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* On screens that are 600px or less*/
 
 @media screen and (max-width: 600px) {
     .board>* {
-        width: 85px;
-        height: 85px;
-        margin: 5px;
+        width: 87px;
+        height: 87px;
+        margin: 3px;
+    }
+
+    .card-back h2 {
+        margin: 5px 5px;
+        color: black;
+        font-size: 65%;
     }
     
+    #logo {
+        width: 200px;
+
+    }
+
 }
+
+    
