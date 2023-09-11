@@ -24,7 +24,6 @@ body {
     background-image: url("../images/background/bg.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     color: var(--main-primary);
 }
 
@@ -54,7 +53,6 @@ h2 {
 }
 
 /* Styles for the game statistics section at the top and bottom of the game board */
-
 
 .game-stats {
     max-width: 1100px;
@@ -90,11 +88,13 @@ h2 {
     padding: 10px;
 }
 
+/* Styles for the game buttons */
+
 button {
     cursor: pointer;
     color: var(--main-primary);
     font-weight: bold;
-    background-color: var(--main-secondary);
+    background-color: var(--text-secondary);
     font-family: Courier Prime, sans-serif;
     font-size: 120%;
     border: 3px solid var(--details-color);
@@ -102,12 +102,12 @@ button {
     box-shadow: 10px 10px 20px var(--details-color);
     padding: 5px;
     margin: 5px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
 }
 
 button:hover {
-    background-color: var(--text-secondary);
+    background-color: var(--main-secondary);
 }
 
 
@@ -262,7 +262,7 @@ footer p {
     margin: 0 auto;
     margin-top: 1%;
     max-width: 600px;
-    background-color: var(--main-secondary);
+    background-color: var(--text-secondary);
     border-radius: 5px;
     text-align: center;
     color: var(--main-primary);
@@ -272,7 +272,7 @@ footer p {
     margin: 0 auto;
     margin-top: 1%;
     max-width: 800px;
-    background-color: var(--main-secondary);
+    background-color: var(--text-secondary);
     border-radius: 5px;
     text-align: center;
     color: var(--main-primary);
@@ -288,15 +288,23 @@ footer p {
 
 .content-modal-win {
     margin: 0 auto;
-    margin-top: 18%;
+    color: var(--main-primary);
     max-width: 400px;
-    background-color: var(--main-secondary);
+    background-color: var(--text-secondary);
     border-radius: 5px;
     text-align: center;
 }
 
 #final {
 font-size: 200%;
+color: var(--details-color);
+margin-bottom: 10px;
+
+}
+
+#score-points {
+    font-weight: bold;
+    font-size: 120%;
 }
 
 .head-modal {
@@ -307,18 +315,16 @@ font-size: 200%;
 }
 
 .head-modal .modal-close-window {
+    color: var(--main-primary);
+    font-weight: bold;
+    font-size: 120%;
     padding: 2%;
     cursor: pointer;
-    border: solid var(--text-secondary) 1px;
-    background-color: var(--text-primary);
+    background-color: var(--main-secondary);
 }
 
 .modal-text {
     padding: 10px;
-}
-
-.modal-text h2 {
-    margin-top: 10px;
 }
 
 
