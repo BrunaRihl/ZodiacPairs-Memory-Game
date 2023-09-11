@@ -162,9 +162,13 @@ function randomCards(deck) {
  * Function to restart game, time ans scores 
  */
 function restartGame() {
-    resetChronometer();
-    pairsMatch = 0;
+    document.getElementById("match").innerText = "0";
+    document.getElementById("unmatch").innerText = "0";
+    document.getElementById("score").innerText = "0";
+    finalScore = 0;
     pairsUnmatch = 0;
+    pairsMatch = 0;
+    resetChronometer();
     initGame()
     activateChronometer()
 }
@@ -219,7 +223,7 @@ function openModal(loadModal) {
         document.getElementById("final").innerText = 'You Won!!!';
     };
 
-    document.getElementById("final-score").innerText = (finalScore);
+    document.getElementById("final-score").innerText = finalScore;
     document.getElementById("final-open").innerText = totalOpen;
     document.getElementById("final-time").innerText = seconds;
     modal.style.display = 'block';
