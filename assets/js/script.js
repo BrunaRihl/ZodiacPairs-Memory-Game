@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries"];
+const signs = ["aries", "taurus", "gemini"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -49,6 +49,7 @@ function buildBoard(list) {
  * Function called when a card is clicked to flip card 
  */
 function flipCard(event) {
+
     if (lockBoard) return;
     if (this === cardOne) return;
 
@@ -64,6 +65,9 @@ function flipCard(event) {
     flipped = false;
 
     checkForMatch();
+
+    document.getElementById("match").innerText = pairsMatch;
+    document.getElementById("unmatch").innerText = pairsUnmatch;
 }
 
 
@@ -84,6 +88,12 @@ function checkForMatch() {
     } else {
         unmatch();
     };
+    document.getElementById("match").innerText = pairsMatch;
+    document.getElementById("unmatch").innerText = pairsUnmatch;
+    finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
+    document.getElementById("score").innerText = finalScore;
+
+
 }
 
 
@@ -167,12 +177,7 @@ function activateChronometer() {
     if (!timeRunning) {
         timerGame = setInterval(() => {
             seconds++;
-                        finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
-
             document.getElementById("time").innerText = seconds;
-            document.getElementById("match").innerText = pairsMatch;
-            document.getElementById("unmatch").innerText = pairsUnmatch;
-            document.getElementById("score").innerText = finalScore;
         }, 1000);
         timeRunning = true;
     }
@@ -194,6 +199,7 @@ function stopChronometer() {
 function resetChronometer() {
     clearInterval(timerGame);
     seconds = 0;
+    
     document.getElementById('time').textContent = '0';
     timeRunning = false;
 }
@@ -204,6 +210,7 @@ function resetChronometer() {
  */
 function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
+    finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
     finalScore = finalScore - seconds
     totalOpen = pairsMatch + pairsUnmatch;
     if (finalScore < 0) {
