@@ -7,7 +7,7 @@
     --main-secondary: #929292;
     --text-primary: #6c6c6c;
     --text-secondary: #d7d7d7;
-    --text-color: #242424;
+    --details-color: #243970;
 
     --white: rgb(255, 255, 255);
 }
@@ -25,7 +25,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: var(--text-color);
+    color: var(--main-primary);
 }
 
 
@@ -105,9 +105,9 @@ button {
 
 #play {
     font-size: 200%;
-    color: var(--text-secondary);
+    color: var(--main-secondary);
     background-color: var(--main-primary);
-    border: #d7d7d7;
+    border: var(--details-color);
     border-style:outset;
 }
 
@@ -247,11 +247,29 @@ footer p {
 .content-modal {
     margin: 0 auto;
     margin-top: 1%;
+    max-width: 600px;
+    background-color: var(--main-secondary);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--main-primary);
+}
+
+.content-modal-const {
+    margin: 0 auto;
+    margin-top: 1%;
     max-width: 800px;
     background-color: var(--main-secondary);
     border-radius: 5px;
     text-align: center;
-    color: var(--text-color);
+    color: var(--main-primary);
+}
+
+
+.modal-text > h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--details-color);
+    border: solid;
 }
 
 .content-modal-win {
@@ -330,7 +348,7 @@ footer p {
     }
 
     .game-stats, header, button {
-        font-size: 85%;
+        font-size: 90%;
     }
 
 
