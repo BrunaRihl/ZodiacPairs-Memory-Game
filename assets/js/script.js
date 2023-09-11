@@ -13,6 +13,22 @@ let finalTime = undefined;
 let pairsUnmatch = 0;
 let finalScore = 0;
 
+const closeWindWin = document.getElementById('close-modal-win')
+const closeWindConst = document.getElementById('close-modal-const')
+const closeWindRules = document.getElementById('close-modal-rules')
+const openWindRules = document.getElementById('open-modal-rules')
+const openWindConst = document.getElementById('open-modal-const')
+const playGame = document.getElementById('play-game')
+const replayGame = document.getElementById('replay-game')
+
+closeWindWin.addEventListener('click', function() { closeModal('win'); });
+closeWindConst.addEventListener('click', function() { closeModal('vis-modal-const'); });
+closeWindRules.addEventListener('click', function() { closeModal('vis-modal-rules'); });
+openWindConst.addEventListener('click', function() { openModal('vis-modal-const'); });
+openWindRules.addEventListener('click', function() { openModal('vis-modal-rules'); });
+playGame.addEventListener('click', function() { restartGame(); });
+replayGame.addEventListener('click', function() { restartGame(); });
+
 /**
  * Function to build the game board 
  */
@@ -207,8 +223,12 @@ function openModal(loadModal) {
 /**
  * Function to close the modal window 
  */
-function closeModal(exitModal) {
+
+
+function closeModal(exitModal) {        
     let modal = document.getElementById(exitModal);
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
+
 }
+

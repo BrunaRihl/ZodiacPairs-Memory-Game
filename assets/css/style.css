@@ -111,7 +111,7 @@ button:hover {
 }
 
 
-#play {
+#play-game {
     font-size: 200%;
     color: var(--text-secondary);
     background-color: var(--main-primary);
