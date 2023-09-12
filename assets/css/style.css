@@ -18,13 +18,15 @@
     border: none;
 }
 
+html {
+    /*background image*/
+    background: url(../images/background/bg-new.jpg) no-repeat center bottom fixed;
+    background-size: cover;  
+}
+  
 body {
-    font-family: Space Mono, sans-serif;
     font-weight: 400;
-    background-image: url("../images/background/bg-new.jpg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: Space Mono, sans-serif;    
     color: var(--main-primary);
 }
 
@@ -102,7 +104,7 @@ button {
     border-radius: 10px;
     box-shadow: 10px 10px 20px var(--details-color);
     padding: 5px;
-    margin: 12px;
+    margin: 10px 10px 0 10px;
     transition: background-color 0.3s ease-in-out;
 
 }
@@ -113,11 +115,13 @@ button:hover {
 
 
 #play-game {
-    font-size: 200%;
+    font-size: 150%;
     color: var(--text-secondary);
     background-color: var(--main-primary);
     border: 3px solid var(--details-color);
     transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+
 }
 
 #play-game:hover {
@@ -252,7 +256,7 @@ button:hover {
 
 .content-modal {
     margin: 0 auto;
-    margin-top: 1%;
+    margin-top: 3%;
     max-width: 600px;
     background-color: var(--text-secondary);
     border-radius: 5px;
@@ -355,7 +359,7 @@ footer p {
     font-size: 80%;
     text-align: center;
     color: var(--main-secondary);
-    background-color: #333;
+    background-color: var(--main-primary);
     max-width: 1108px;
     margin: auto;
     padding: 8px;
@@ -368,23 +372,26 @@ footer p {
 
 @media screen and (max-width: 1000px) {
 
-    body {
-        background-image: url("../images/background/bg-small.jpg"); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    html {
+        /*background image*/
+        background: url(../images/background/bg-small.jpg) no-repeat center bottom fixed;
+        background-size: cover;  
+    }
+
+    .content-modal {
+        margin: 0 auto;
+        margin-top: 30%;
     }
 }
 
 /* On screens that are 600px or less*/
 
 @media screen and (max-width: 600px) {
-
-    body {
-        background-image: url("../images/background/bg-small.jpg"); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    
+    html {
+        /*background image*/
+        background: url(../images/background/bg-small.jpg) no-repeat center bottom fixed;
+        background-size: cover;  
     }
     
     .board>* {
@@ -407,9 +414,16 @@ footer p {
         font-size: 90%;
     }
 
+
     .modal {
         font-size: 80%;
     }
+
+    .content-modal {
+        margin: 0 auto;
+        margin-top: 30%;
+    }
+    
 }
 
     
