@@ -21,8 +21,9 @@
 body {
     font-family: Space Mono, sans-serif;
     font-weight: 400;
-    background-image: url("../images/background/bg.jpg"); 
+    background-image: url("../images/background/bg-new.jpg"); 
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: var(--main-primary);
 }
@@ -101,7 +102,7 @@ button {
     border-radius: 10px;
     box-shadow: 10px 10px 20px var(--details-color);
     padding: 5px;
-    margin: 5px;
+    margin: 12px;
     transition: background-color 0.3s ease-in-out;
 
 }
@@ -124,6 +125,7 @@ button:hover {
     color: var(--main-primary);
 }
 
+/* footer */
 
 footer p {
     font-size: 80%;
@@ -284,6 +286,8 @@ footer p {
     margin-top: 10px;
     color: var(--details-color);
     border: solid;
+    font-weight: bold;
+
 }
 
 .content-modal-win {
@@ -333,7 +337,11 @@ margin-bottom: 10px;
     margin: 10px;
 }
 
-
+#modal-tit {
+    color: var(--details-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 /* modal window */
 
 footer p {
@@ -348,9 +356,31 @@ footer p {
     margin-bottom: 10px;
 }
 
+
+/* On screens that are 1000px*/
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        background-image: url("../images/background/bg-small.jpg"); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+
 /* On screens that are 600px or less*/
 
 @media screen and (max-width: 600px) {
+
+    body {
+        background-image: url("../images/background/bg-small.jpg"); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     .board>* {
         width: 87px;
         height: 87px;
@@ -369,6 +399,10 @@ footer p {
 
     .game-stats, header, button {
         font-size: 90%;
+    }
+
+    .modal {
+        font-size: 80%;
     }
 
 
