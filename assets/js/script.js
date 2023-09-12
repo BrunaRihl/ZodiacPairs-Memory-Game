@@ -218,9 +218,9 @@ function openModal(loadModal) {
     finalScore = finalScore - seconds
     totalOpen = pairsMatch + pairsUnmatch;
     if (finalScore < 0) {
-        document.getElementById("final").innerText = 'You Lost :(';
+        document.getElementById("final").innerText = 'You Lose :(';
     } else {
-        document.getElementById("final").innerText = 'You Won!!!';
+        document.getElementById("final").innerText = 'You Win!!!';
     };
 
     document.getElementById("final-score").innerText = finalScore;
