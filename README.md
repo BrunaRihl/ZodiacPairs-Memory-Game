@@ -1,39 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ZodiacPairs
 
-Welcome,
+In ZodiacPairs - Memory Game, visitors immerse themselves in the constellations of the zodiac signs. Here, they can enhance their memory and matching skills while exploring astronomical representations in an engaging and educational environment.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![ZodiacPairs website shown on a range of devices](/assets/images/docs/responsive.png)  
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+## Demo
+The live demo is available at [here](https://brunarihl.github.io/ZodiacPairs-Memory-Game/)!
 
-## Codeanywhere Reminders
+## Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+* [User Experience](#user-experience)
+  * [Website Overview](#website-overview)
+  * [User base](#user-base)
+  * [Website Goals](#website-goals)
 
-`python3 -m http.server`
+* [Design](#design)
+  * [Color Palette](#color-palette)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+    
+* [Features](#features)
+  * [General Features on Each Page](#features)
+  * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
+  * [Accessibility](#accessibility)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* [Testing](#testing)
+  * [Tested Browsers and Devices](#tested-browsers-and-devices)
+  * [Manual Testing](#manual-testing)
+  * [Validator Testing](#validator-testing)
+  * [Bugs](#bugs)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-`http_server`
+* [Deployment](#deployment)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Credits](#credits)
+  * [Code](#code)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Experience
 
-To log into the Heroku toolbelt CLI:
+### Website overview 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The 'ZodiacPairs' Memory Game is an original creation that immerses players in a captivating universe of zodiacal constellations. Every element of the game, including the selected images, has been designed to engulf the user in this atmosphere. This experience provides an interactive and enthralling view of the cosmos, encouraging players to delve into the rich mythology behind the zodiac signs while challenging their cognitive abilities.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### User base
 
----
+ * Astrology Enthusiasts: Individuals interested in astrology, zodiac signs, and constellations.
 
-Happy coding!
+ * Memory Game Enthusiasts: Those who enjoy mental challenges and games that exercise memory skills.
+
+ * Cosmic Explorers: Curious about astronomy and the exploration of space.
+
+ * Friend and Family Groups:  Seek a fun activity to enjoy while getting to know constellations.
+
+ * Online Entertainment Seekers: Look for a fun and interactive web experience.
+
+ * Mental Challenge Seekers: Attracted to games that stimulate the mind.
+
+ 
+### Website Game Goals  
+
+ * Stimulate Interest in Astrology: Spark curiosity and fascination among users about astrology and its connections with constellations.
+
+ * Encourage Ongoing Improvement: Motivate players to return to the game, aiming to surpass their previous scores and demonstrate progress over time.
+
+ * Enabling Leisure: Enjoyable exploration of astrology and constellations for relaxation and amusement.
+
+ * Provide Information: Offer engaging insights about constellations and zodiac signs.
+
+ * Create an Immersive Experience: Ensure the website's design and content deliver an attractive experience for visitors.
+
+ * Enhance Cognitive Skills: Assist players in refining their memory and concentration abilities.
+
+ * Facilitate Navigation and Usability: Ensure visitors can easily find what they're looking for and navigate the game intuitively.
+
+
+## Design
+
+### Color palette
+
+Selected a color palette with shades of gray, white, black, and blue to capture the atmosphere of a starry sky and convey the sensation of contemplating constellations. The tones were chosen with the purpose of reflecting the beauty and serenity of the night sky. The contrast between soft colors and darker tones not only evoked the shimmering effect of a starry sky but also contributed to creating a pleasant visual experience, aiding in reading and navigation on the website.
+
+![ZodiacPairs website color palette](/assets/images/docs/palette.png)  
+
