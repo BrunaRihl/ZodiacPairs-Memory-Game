@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus"];
+const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
