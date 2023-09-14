@@ -110,7 +110,7 @@ I developed a simple wireframe in PowerPoint for the game, aiming to ensure a co
 ![ZodiacPairs wireframe](/assets/images/docs/wireframe.png)  
 
 
-## Features
+# Features
 
 The game website consists of only one initial page that starts with a header, buttons to access information about the game rules and the zodiac constellations, play and replay buttons, as well as a game status bar that is activated only when the player presses the "play" button. At this point, the game board with the cards is displayed. Additionally, there are three modal windows: one for the rules, another for game information, and a final one that is displayed when the game concludes.
 
@@ -137,14 +137,17 @@ Below the header, users will find there are two informational buttons.
 
 When clicked, one opens a modal window explaining the rules and scoring of the game, while the other provides a brief explanation about the zodiac sign constellations." 
 
-* How to play:
+    How to play:
+
 ![ZodiacPairs info buttons](/assets/images/docs/how-play.png)
 
-* Discover Zodiac Constellations
+    Discover Zodiac Constellations:
+
 ![ZodiacPairs info buttons](/assets/images/docs/info-const.png)
 
 ### Play and Replay Buttons
 
-Below the header, users will find there are two informational buttons. 
+Following that, we have the 'Play' and 'Replay' buttons section. The 'Play' button has been prominently styled to emphasize its role as the central starting point for the user experience
 
+![ZodiacPairs info buttons](/assets/images/docs/play-btns.png)
 
