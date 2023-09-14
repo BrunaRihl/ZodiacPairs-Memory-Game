@@ -12,21 +12,24 @@
     --white: rgb(255, 255, 255);
 }
 
+/* Resetting default styles for all elements */
+
 * {
     margin: 0;
     padding: 0;
     border: none;
 }
 
+
 html {
     /*background image*/
     background: url(../images/background/bg.jpg) no-repeat center bottom fixed;
-    background-size: cover;  
+    background-size: cover;
 }
-  
+
 body {
     font-weight: 400;
-    font-family: Space Mono, sans-serif;    
+    font-family: 'Space Mono', sans-serif;
     color: var(--main-primary);
 }
 
@@ -35,7 +38,7 @@ body {
 
 h1,
 h2 {
-    font-family: Courier Prime, sans-serif;
+    font-family: 'Courier Prime', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -55,7 +58,8 @@ h2 {
     margin-top: 20px;
 }
 
-/* Styles for the game statistics section at the top and bottom of the game board */
+
+/* Styles for the game statistics section of the game board */
 
 .game-stats {
     max-width: 1100px;
@@ -98,7 +102,7 @@ button {
     color: var(--main-primary);
     font-weight: bold;
     background-color: var(--text-secondary);
-    font-family: Courier Prime, sans-serif;
+    font-family: 'Courier Prime', sans-serif;
     font-size: 120%;
     border: 3px solid var(--details-color);
     border-radius: 10px;
@@ -112,7 +116,6 @@ button {
 button:hover {
     background-color: var(--main-secondary);
 }
-
 
 #play-game {
     font-size: 150%;
@@ -128,6 +131,7 @@ button:hover {
     background-color: var(--text-secondary);
     color: var(--main-primary);
 }
+
 
 /* game board*/
 
@@ -148,6 +152,7 @@ button:hover {
     border-radius: 4%;
 }
 
+
 /* cards */
 
 .card-back {
@@ -163,9 +168,9 @@ button:hover {
     font-size: 90%;
 }
 
-.card-back:hover{
-  transform: scale(1.05);
-  transition: 100ms ease-in-out 0s;
+.card-back:hover {
+    transform: scale(1.05);
+    transition: 100ms ease-in-out 0s;
 }
 
 .taurus {
@@ -240,6 +245,7 @@ button:hover {
     background-size: cover;
 }
 
+
 /* modal window */
 
 .modal {
@@ -285,9 +291,9 @@ button:hover {
 }
 
 #final {
-font-size: 200%;
-color: var(--details-color);
-margin-bottom: 10px;
+    font-size: 200%;
+    color: var(--details-color);
+    margin-bottom: 10px;
 
 }
 
@@ -311,7 +317,8 @@ margin-bottom: 10px;
     cursor: pointer;
     background-color: var(--main-secondary);
 }
-.modal-text > h2 {
+
+.modal-text>h2 {
     margin-bottom: 10px;
     margin: 10px 30px 10px 30px;
     color: var(--details-color);
@@ -320,7 +327,7 @@ margin-bottom: 10px;
     font-size: 110%;
 }
 
-.modal-text > p {
+.modal-text>p {
     margin: 10px 40px 10px 40px;
     font-size: 90%;
 }
@@ -333,7 +340,7 @@ margin-bottom: 10px;
     font-size: 90%;
 }
 
-.modal-text i{
+.modal-text i {
     color: var(--details-color);
 }
 
@@ -353,6 +360,7 @@ margin-bottom: 10px;
     margin-bottom: 10px;
 }
 
+
 /* Footer */
 
 footer p {
@@ -368,6 +376,8 @@ footer p {
 }
 
 
+/*Media queries */
+
 /* On screens that are 1000px*/
 
 @media screen and (max-width: 1000px) {
@@ -375,7 +385,7 @@ footer p {
     html {
         /*background image*/
         background: url(../images/background/bg-small.jpg) no-repeat center bottom fixed;
-        background-size: cover;  
+        background-size: cover;
     }
 
     .content-modal {
@@ -387,13 +397,13 @@ footer p {
 /* On screens that are 600px or less*/
 
 @media screen and (max-width: 600px) {
-    
+
     html {
         /*background image*/
         background: url(../images/background/bg-small.jpg) no-repeat center bottom fixed;
-        background-size: cover;  
+        background-size: cover;
     }
-    
+
     .board>* {
         width: 87px;
         height: 87px;
@@ -405,12 +415,14 @@ footer p {
         color: black;
         font-size: 65%;
     }
-    
+
     #logo {
         width: 200px;
     }
 
-    .game-stats, header, button {
+    .game-stats,
+    header,
+    button {
         font-size: 90%;
     }
 
@@ -418,16 +430,12 @@ footer p {
     .modal {
         font-size: 80%;
     }
-
-    .content-modal {
-        margin: 0 auto;
-        margin-top: 30%;
-    }
-    
 }
 
-@media screen and (max-width: 600px) {
-    
+/* On screens that are 393px or less*/
+
+@media screen and (max-width: 393px) {
+
     .board>* {
         width: 80px;
         height: 80px;
