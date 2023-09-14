@@ -151,3 +151,62 @@ Following that, we have the 'Play' and 'Replay' buttons section. The 'Play' butt
 
 ![ZodiacPairs info buttons](/assets/images/docs/play-btns.png)
 
+### Game board:
+
+* The game board is designed to display only when the player presses the 'Play' or 'Replay' buttons. For the memory card game, images of zodiac constellations were used. Additionally, a custom back card with the game's name was created. When the player matches the corresponding pairs of constellations, the name of the zodiac sign to which the constellation belongs is revealed.
+
+![ZodiacPairs game board cards back](/assets/images/docs/cards-back.png)
+
+![ZodiacPairs game board cards](/assets/images/docs/cards.png)
+
+
+### Accessibility 
+
+From the project's inception, the game website's design was planned with a focus on accessibility. Special attention was given to ensure there was adequate color contrast, an easily comprehensible structure, and intuitive navigation. Additionally, practices of semantic HTML were implemented, establishing a robust foundation for the user experience.
+
+#### LightHouse 
+
+The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools.
+
+  * Desktop
+![LightHouse - desktop](/assets/images/docs/lighthouse.png)  
+  * Mobile
+![LightHouse - Mobile](/assets/images/docs/lignthouse-mobile.png)  
+
+## Testing 
+
+### Tested Browsers and Devices: 
+
+* Web Browsers: 
+
+  * Google Chrome;
+
+  * Microsoft Edge; 
+ 
+  * Safari; 
+
+  * Mozilla Firefox.
+
+
+* Mobile Devices: 
+
+  * iPhone Xr;
+
+  * iPhone 12 Pro; (Google Chrome Inspector) 
+
+  * Samsung Galaxy S20 Ultra. (Google Chrome Inspector) 
+
+
+* Tablet: 
+
+  * Ipad Air 4, 10.9-inch screen;
+
+  * Nest Hub. (Google Chrome Inspector) 
+
+ 
+* Laptop: 
+
+  * Macbook Air, 13-inch screen;
+
+  * Asus TUF F15, 15.6-inch screen. 
+
