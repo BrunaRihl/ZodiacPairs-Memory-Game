@@ -1,5 +1,5 @@
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
+const signs = ["aries", "taurus"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -9,17 +9,16 @@ let pairsMatch = 0;
 let timerGame;
 let seconds = 0;
 let timeRunning = false;
-let finalTime = undefined;
 let pairsUnmatch = 0;
 let finalScore = 0;
 
-const closeWindWin = document.getElementById('close-modal-win')
-const closeWindConst = document.getElementById('close-modal-const')
-const closeWindRules = document.getElementById('close-modal-rules')
-const openWindRules = document.getElementById('open-modal-rules')
-const openWindConst = document.getElementById('open-modal-const')
-const playGame = document.getElementById('play-game')
-const replayGame = document.getElementById('replay-game')
+const closeWindWin = document.getElementById('close-modal-win');
+const closeWindConst = document.getElementById('close-modal-const');
+const closeWindRules = document.getElementById('close-modal-rules');
+const openWindRules = document.getElementById('open-modal-rules');
+const openWindConst = document.getElementById('open-modal-const');
+const playGame = document.getElementById('play-game');
+const replayGame = document.getElementById('replay-game');
 
 closeWindWin.addEventListener('click', function() { closeModal('win'); });
 closeWindConst.addEventListener('click', function() { closeModal('vis-modal-const'); });
@@ -37,8 +36,8 @@ function buildBoard(list) {
         board.insertAdjacentHTML(
             "beforeend",
             `<div class="card-back" data-name=${list[index]}></div>`
-        )
-    };
+        );
+    }
 
     let cards = document.querySelectorAll('.card-back');
     cards.forEach(card => card.addEventListener('click', flipCard));
@@ -79,21 +78,18 @@ function checkForMatch() {
 
     if (isMatch) {
         match();
-        pairsMatch++
+        pairsMatch++;
         if (pairsMatch === signs.length) {
-            finalTime = seconds;
             stopChronometer();
-            openModal("win")
-        };
+            openModal("win");
+        }
     } else {
         unmatch();
-    };
+    }
     document.getElementById("match").innerText = pairsMatch;
     document.getElementById("unmatch").innerText = pairsUnmatch;
     finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
     document.getElementById("score").innerText = finalScore;
-
-
 }
 
 
@@ -102,11 +98,11 @@ function checkForMatch() {
  */
 function match() {
     cardOne.removeEventListener('click', flipCard);
-    cardOne.innerHTML = `<h2>${cardOne.dataset.name}</h2>`
+    cardOne.innerHTML = `<h2>${cardOne.dataset.name}</h2>`;
     cardTwo.removeEventListener('click', flipCard);
-    cardTwo.innerHTML = `<h2>${cardTwo.dataset.name}</h2>`
+    cardTwo.innerHTML = `<h2>${cardTwo.dataset.name}</h2>`;
 
-    resetBoard()
+    resetBoard();
 }
 
 
@@ -120,7 +116,7 @@ function unmatch() {
     setTimeout(() => {
         cardOne.classList.remove(cardOne.dataset.name);
         cardTwo.classList.remove(cardTwo.dataset.name);
-        resetBoard()
+        resetBoard();
     }, 1500);
 }
 
@@ -169,8 +165,8 @@ function restartGame() {
     pairsUnmatch = 0;
     pairsMatch = 0;
     resetChronometer();
-    initGame()
-    activateChronometer()
+    initGame();
+    activateChronometer();
 }
 
 
@@ -203,7 +199,6 @@ function stopChronometer() {
 function resetChronometer() {
     clearInterval(timerGame);
     seconds = 0;
-    
     document.getElementById('time').textContent = '0';
     timeRunning = false;
 }
@@ -215,17 +210,17 @@ function resetChronometer() {
 function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
     finalScore = (pairsMatch * 50) - (pairsUnmatch * 10);
-    finalScore = finalScore - seconds
+    finalScore = finalScore - seconds;
     totalOpen = pairsMatch + pairsUnmatch;
+    document.getElementById("final-open").innerText = totalOpen;
+    document.getElementById("final-time").innerText = seconds;
+    document.getElementById("final-score").innerText = finalScore;
     if (finalScore < 0) {
         document.getElementById("final").innerText = 'You Lose :(';
     } else {
         document.getElementById("final").innerText = 'You Win!!!';
-    };
+    }
 
-    document.getElementById("final-score").innerText = finalScore;
-    document.getElementById("final-open").innerText = totalOpen;
-    document.getElementById("final-time").innerText = seconds;
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
@@ -234,12 +229,9 @@ function openModal(loadModal) {
 /**
  * Function to close the modal window 
  */
-
-
 function closeModal(exitModal) {        
     let modal = document.getElementById(exitModal);
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
-
 }
 
