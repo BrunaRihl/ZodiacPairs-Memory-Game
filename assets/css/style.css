@@ -110,7 +110,6 @@ button {
     padding: 5px;
     margin: 10px 10px 0 10px;
     transition: background-color 0.3s ease-in-out;
-
 }
 
 button:hover {
@@ -124,7 +123,6 @@ button:hover {
     border: 3px solid var(--details-color);
     transition: background-color 0.3s ease-in-out;
     margin-bottom: 10px;
-
 }
 
 #play-game:hover {
@@ -133,7 +131,7 @@ button:hover {
 }
 
 
-/* game board*/
+/* game board */
 
 .board {
     display: flex;

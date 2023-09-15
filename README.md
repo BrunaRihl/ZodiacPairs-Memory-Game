@@ -105,7 +105,9 @@ The selected images for the website aim to immerse users in the world of zodiac 
 
 ### Wireframes
 
-I developed a simple wireframe in PowerPoint for the game, aiming to ensure a consistent experience across mobile devices, computers, and tablets. I adjusted the size of buttons, texts, and cards, while maintaining the same layout for all cases. Later on, I made minor positioning adjustments and added some buttons to enhance functionality and user experience, ensuring the game is accessible and enjoyable on any platform.
+I developed a simple wireframe in PowerPoint for the game, aiming to ensure a consistent experience across mobile devices, computers, and tablets. I adjusted the size of buttons, texts, and cards, while maintaining the same layout for all cases.
+
+I made some adjustments in relation to what I had planned for positioning and added some buttons to enhance functionality and user experience, aiming to ensure the game is accessible and enjoyable on any platform.
 
 ![ZodiacPairs wireframe](/assets/images/docs/wireframe.png)  
 
@@ -114,12 +116,18 @@ I developed a simple wireframe in PowerPoint for the game, aiming to ensure a co
 
 The game website consists of only one initial page that starts with a header, buttons to access information about the game rules and the zodiac constellations, play and replay buttons, as well as a game status bar that is activated only when the player presses the "play" button. At this point, the game board with the cards is displayed. Additionally, there are three modal windows: one for the rules, another for game information, and a final one that is displayed when the game concludes.
 
+
 ## Background
 
-I chose high-resolution images that were relevant to the theme of the game for the backgrounds. I ensured that, depending on the device's screen size - whether it's larger screens like computers or smaller screens like phones or tablets - different images were displayed to better fit the screen. This approach was adopted to enhance the visual experience regardless of the device used.
+High-resolution images, pertinent to the game's theme, were selected for the backgrounds. Tailored to various screen sizes, such as larger displays on computers or smaller ones on phones or tablets, distinct images were displayed for optimal fitting. This method was employed to elevate the visual experience, regardless of the device in use.
 
 ![ZodiacPairs backgrownd images - image hero](/assets/images/docs/sizes-bg.png)
 
+### Favicon
+
+The favicon has been added with the game logo in the browser tab.
+
+![ZodiacPairs backgrownd images - image hero](/assets/images/docs/favicon-zp.png)
 
 ## Sections
 
@@ -135,36 +143,47 @@ Below the header, users will find there are two informational buttons.
   
 ![ZodiacPairs info buttons](/assets/images/docs/info-btns.png)
 
-When clicked, one opens a modal window explaining the rules and scoring of the game, while the other provides a brief explanation about the zodiac sign constellations." 
+When clicked, one opens a modal window explaining the rules and scoring of the game, while the other provides a brief explanation about the zodiac sign constellations.
 
-    How to play:
+#### How to play:
 
 ![ZodiacPairs info buttons](/assets/images/docs/how-play.png)
 
-    Discover Zodiac Constellations:
+#### Discover Zodiac Constellations:
 
 ![ZodiacPairs info buttons](/assets/images/docs/info-const.png)
 
 ### Play and Replay Buttons
 
-Following that, we have the 'Play' and 'Replay' buttons section. The 'Play' button has been prominently styled to emphasize its role as the central starting point for the user experience
+* Following that, we have the 'Play' and 'Replay' buttons section. 
+* The 'Play' button has been prominently styled to emphasize its role as the central starting point for the user experience
 
 ![ZodiacPairs info buttons](/assets/images/docs/play-btns.png)
 
 ### Game board:
 
-* The game board is designed to display only when the player presses the 'Play' or 'Replay' buttons. For the memory card game, images of zodiac constellations were used. Additionally, a custom back card with the game's name was created. When the player matches the corresponding pairs of constellations, the name of the zodiac sign to which the constellation belongs is revealed.
+* The game board is designed to display only when the player presses the 'Play' or 'Replay' buttons. 
+* For the memory card game, images of zodiac constellations were used. 
+* A custom back card with the game's name was created. 
+* When the player matches the corresponding pairs of constellations, the name of the zodiac sign to which the constellation belongs is revealed.
 
 ![ZodiacPairs game board cards back](/assets/images/docs/cards-back.png)
 
 ![ZodiacPairs game board cards](/assets/images/docs/cards.png)
 
+### Final Game Modal Window:
 
-### Accessibility 
+At the end of the game, a modal window is displayed, informing whether the player has won or lost, as well as presenting the final score, the number of moves required to find the card pairs, and the elapsed time.
+
+![ZodiacPairs final game win](/assets/images/docs/win.png)
+
+![ZodiacPairs final game lose](/assets/images/docs/lose.png)
+
+## Accessibility 
 
 From the project's inception, the game website's design was planned with a focus on accessibility. Special attention was given to ensure there was adequate color contrast, an easily comprehensible structure, and intuitive navigation. Additionally, practices of semantic HTML were implemented, establishing a robust foundation for the user experience.
 
-#### LightHouse 
+### LightHouse 
 
 The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools.
 
