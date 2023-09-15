@@ -114,7 +114,7 @@ I made some adjustments in relation to what I had planned for positioning and ad
 
 # Features
 
-The game website consists of only one initial page that starts with a header, buttons to access information about the game rules and the zodiac constellations, play and replay buttons, as well as a game status bar that is activated only when the player presses the "play" button. At this point, the game board with the cards is displayed. Additionally, there are three modal windows: one for the rules, another for game information, and a final one that is displayed when the game concludes.
+The game website consists of only one initial page that starts with a header, buttons to access information about the game rules and the zodiac constellations, play and replay buttons, as well as a game stats bar that is activated only when the player presses the "play" button. At this point, the game board with the cards is displayed. Additionally, there are three modal windows: one for the rules, another for game information, and a final one that is displayed when the game concludes.
 
 
 ## Background
@@ -228,4 +228,58 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
   * Macbook Air, 13-inch screen;
 
   * Asus TUF F15, 15.6-inch screen. 
+
+### Manual Testing
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| **`Background`** |
+|  |  |  |  |  |
+| Background-image | The background image should change according to the screen size used by the user. | Opening the game in different screen sizes. | The background image change according to the screen size. | Pass |
+| **`Buttons`** |
+|  |  |  |  |  |
+| Play Button clicked | After clicking the play button, the memory game board is displayed, and the timer starts counting seconds.| Clicked play button | The game board is displayed and the timer starts. | Pass |
+| Play-hover | When hovering over the "Play" button, it transitions to a white color, signifying its clickability and responsiveness. | Hover over play button | play button transitions it to a white color. | Pass |
+| How to Play-hover | When hovering over the "How to Play" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over How to Play button | How to Play button transitions it to a gray color. | Pass |
+| Discover Zodiac Constellations-hover | When hovering over the "Discover Zodiac Constellation" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over Discover Zodiac Constellation button | Discover Zodiac Constellation button transitions it to a gray color. | Pass |
+| Restart-hover | When hovering over the "Restart" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over Restart button | Restart button transitions it to a gray color. | Pass |
+| Restart Button clicked | When the 'Restart' button is pressed, all cards are flipped and shuffled, and the timer starts counting seconds | Clicked restar button | All cards are flipped and shuffled, and the timer starts counting seconds. | Pass |
+| **`Cards`** |
+|  |  |  |  |  |
+| Card-clicked | When clicking on a card, it should flip to reveal the image. | Clicked card | Flip to reveal the image. | Pass |
+| Cards-Match | When two open cards are a match, they remain open, revealing the name of the sign constellation, and unlock the game board for the next move.| Clicked two cards match | they remain open with the name of the sign constellation, and unlock the game board. | Pass |
+| Cards-Unmatch | When two cards do not match, they flip back, releasing the game board for the next move.| Clicked two cards unmatch | they flip back, and unlock the game board. | Pass |
+| **`Stats Bar`** |
+|  |  |  |  |  |
+| Pairs Match | When pairs match, the "Match" adds 1 point. | Clicked two cards match | The "match" adds 1 point. | Pass |
+| Pairs Unmatch | When two cards do not match, the "Unmatch" adds 1 point. | Clicked two cards unmatch | The "Unmatch" adds 1 point. | Pass |
+| Score | The score starts at zero and changes according to the user's moves. Making a pair adds 50 points, while each unmatch deducts 10 points.| Clicking on the cards and attempting to find the pairs. | The score correctly changes according to the pairs. | Pass |
+| Time | The timer starts counting seconds as soon as the user presses 'Play' or 'Replay', and stops when all pairs are found.|  Left text boxes blank and send | Unable to submit, Tooltip informs that this field is required.| Pass |
+| Reset | The stats bar should reset to zero with each 'Play' or 'Restart' of the game. |  Finishing the game and pressing the 'Play/Restart' buttons. | Stats bar reset to zero| Pass |
+| **`Info-Modals`** |
+|  |  |  |  |  |
+| How to play | When clicking the respective button, a modal window with information should open. It should close when clicking the 'x'.| Clicked 'How to play' and 'x' | Opens with information and and close correctly when requested. | Pass |
+| Consttelations info | When clicking the respective button, a modal window with scrollable information and an image should open. It should close when clicking the 'x'.| Clicked 'Discover Zodiac Constellations' and 'x' | Opens with scrollable information and an image and it closes correctly when requested. | Pass |
+| **`Final-Modal`** |
+|  |  |  |  |  |
+| Win Modal | When finishing, if the score minus the seconds used in the game is above zero, the game should open a modal window with the text 'You Win', displaying final score, time used, and number of pairs clicked. The window should close when clicking the 'x'.| Finishing  with final score above zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
+| Lose Modal | When finishing, if the score minus the seconds used in the game is below zero, the game should open a modal window with the text 'You Lose :(' displaying the final score, time used, and the number of pairs clicked. The window should close when clicking the 'x'| Finishing  with final score below zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
+
+### Validator Testing  
+
+* HTML:  
+No errors were found during the validation process using the official W3C validator.  
+
+![W3C validator - Index](/assets/images/docs/html-check.png) 
+
+* CSS:  
+No errors were found during the validation process using the official Jigsaw validator. 
+
+![Jigsaw validator - Css](/assets/images/docs/css-validator.png)  
+
+* JavaScript:  
+No errors were found during the validation process using the official JSHint, a JavaScript Code Quality Tool.
+
+![Jigsaw validator - Css](/assets/images/docs/jshint.png)  
+
 
