@@ -262,8 +262,8 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Consttelations info | When clicking the respective button, a modal window with scrollable information and an image should open. It should close when clicking the 'x'.| Clicked 'Discover Zodiac Constellations' and 'x' | Opens with scrollable information and an image and it closes correctly when requested. | Pass |
 | **`Final-Modal`** |
 |  |  |  |  |  |
-| Win Modal | When finishing, if the score minus the seconds used in the game is above zero, the game should open a modal window with the text 'You Win', displaying final score, time used, and number of pairs clicked. The window should close when clicking the 'x'.| Finishing  with final score above zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
-| Lose Modal | When finishing, if the score minus the seconds used in the game is below zero, the game should open a modal window with the text 'You Lose :(' displaying the final score, time used, and the number of pairs clicked. The window should close when clicking the 'x'| Finishing  with final score below zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
+| Win Modal | When finishing game, if the score minus the seconds used in the game is above zero, the game should open a modal window with the text 'You Win', displaying final score, time used, and number of pairs clicked. The window should close when clicking the 'x'.| Finishing game with final score above zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
+| Lose Modal | When finishing game, if the score minus the seconds used in the game is below zero, the game should open a modal window with the text 'You Lose :(' displaying the final score, time used, and the number of pairs clicked. The window should close when clicking the 'x'| Finishing game with final score below zero| The window opened correctly, with the correct calculations and phrase, and closed when requested. | Pass |
 
 ### Validator Testing  
 
@@ -283,3 +283,109 @@ No errors were found during the validation process using the official JSHint, a 
 ![Jigsaw validator - Css](/assets/images/docs/jshint.png)  
 
 
+### Bugs
+
+#### Solved Bugs
+
+
+#### Unsolved Bugs
+
+No unfixed bugs on the website.
+
+
+## Technologies Used
+### Languages Used
+Html, CSS and JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+Visual Studio Code (VS Code): Utilized as a source code editor.
+
+[Google Fonts](https://fonts.google.com/): Imported to integrate font styles into the website. 
+
+[Font Awesome](https://fontawesome.com/): Incorporated to easily add icons across the website.
+
+Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
+
+[Adobe Express](https://www.adobe.com/br/express/feature/image/resize): Utilized for image manipulation and resizing.
+
+Paint: Used to edit the images. 
+
+[The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): Employed to validate the correctness and compliance of CSS code. 
+
+[The official JSHint](https://jshint.com/): Used to identify issues in my Javascript code. 
+
+[GitHub](https://github.com/): Used to save and store the website files.
+
+[Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): Utilized to view the website's appearance and responsiveness across a range of devices.
+
+PowerPoint: Utilized to create the design for my game project.
+
+## Deployment  
+
+* Go to the main page of your GitHub repository and click on the "Settings" button.
+
+* In the left-hand side menu, navigate to the "Code and automation" section and select "Pages."
+
+* In the build and deployment area, choose "Deploy from a branch" and select the "main" branch and the root directory ("/").
+
+* Click on the "Save" button to confirm the settings.
+
+* It may take a few minutes for the website to be displayed on GitHub Pages.
+
+You can access the live website by clicking [here](https://brunarihl.github.io/ZodiacPairs-Memory-Game/).
+
+## Credits
+
+### Code
+While working on the development of my game, there were occasions where I needed to conduct research that covered topics beyond the scope of the course or even required thorough revision. Below, I am sharing the links to the consulted sources:
+
+* [Dev - Javascript DOM manipulation cheatsheet](https://dev.to/m0nm/javascript-dom-manipulation-cheatsheet-1jkb)
+
+* [FreeCodeCamp - How to clone an array in JavaScript](https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/)
+
+* [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.smashingmagazine.com/2021/10/object-fit-background-size-css/)
+
+* [FreeCodeCamp - Evento de clique em JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
+
+* [Raul Esteves - Algoritmo de Fisher-Yates ](https://cssdeck.com/blog/implement-a-blur-or-filter-effect-on-an-image-using-css3/)
+
+* [w3schools - Window setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+
+* [w3schools - JavaScript Timing Events](https://www.w3schools.com/js/js_timing.asp)
+
+* [JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+* [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): used as a resource for implementing flexible and responsive layouts on the website. 
+
+* [README Example](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md): To write the README file, I followed the structure and table format (testing section) from the readme-examples repository by Kera Cudmore.
+
+* The foundation of the website's was established using the CI Love Maths project as a starting point.
+
+### Content
+I created the content on the website.
+* [Space](https://www.space.com/15722-constellations.html) and [Constellation Guide](https://www.constellation-guide.com/constellation-map/zodiac-constellations/): websites used as a source of research for content related to the constellations of the zodiac signs.
+
+### Media
+
+[Canva](https://www.canva.com/): used to create the custom design of the memory card game.
+
+[Favicon.io](https://favicon.io/favicon-converter/): Utilized to convert the star image from the logo into a favicon.
+
+[Logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): Utilized to create the logo. 
+
+[Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): Utilized to create the color palette. 
+
+[Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the game website. 
+
+### Acknowledgments
+
+I want to express my gratitude to the individuals who provided assistance and support throughout the process of completing this project:
+
+ * to my mentor, Jubril Akolade, for his valuable help and feedback;
+
+ * to Laura Mayock, Cohort Facilitator from Code Institute, for always guiding our studies in the best possible way;
+
+ * to my friends Ivan Frezza and Bruna Andelieri, who helped me by clarifying some doubts regarding my codes;
+
+ * to my husband Jasser for his unwavering support and patience during my study period.
