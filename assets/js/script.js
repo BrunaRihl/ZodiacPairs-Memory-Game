@@ -1,16 +1,20 @@
+/*jshint esversion: 6 */
+
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
+const signs = ["aries", "taurus"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
 let lockBoard = false;
 let cardOne, cardTwo;
 let pairsMatch = 0;
+let list;
 let timerGame;
 let seconds = 0;
 let timeRunning = false;
 let pairsUnmatch = 0;
 let finalScore = 0;
+let totalOpen = 0;
 
 const closeWindWin = document.getElementById('close-modal-win');
 const closeWindConst = document.getElementById('close-modal-const');
@@ -32,7 +36,7 @@ replayGame.addEventListener('click', function() { restartGame(); });
  * Function to build the game board 
  */
 function buildBoard(list) {
-    for (const index in list) {
+    for(var index = 0; index< list.length; index++) {
         board.insertAdjacentHTML(
             "beforeend",
             `<div class="card-back" data-name=${list[index]}></div>`
@@ -215,7 +219,7 @@ function openModal(loadModal) {
     document.getElementById("final-open").innerText = totalOpen;
     document.getElementById("final-time").innerText = seconds;
     document.getElementById("final-score").innerText = finalScore;
-    if (finalScore < 0) {
+    if (finalScore < 0) {  
         document.getElementById("final").innerText = 'You Lose :(';
     } else {
         document.getElementById("final").innerText = 'You Win!!!';

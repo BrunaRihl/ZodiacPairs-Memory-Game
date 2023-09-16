@@ -21,7 +21,7 @@ The live demo is available at [here](https://brunarihl.github.io/ZodiacPairs-Mem
   * [Wireframes](#wireframes)
     
 * [Features](#features)
-  * [General Features on Each Page](#features)
+  * [General Features on Page](#features)
   * [Features and resources to be added in the future](#features-and-resources-to-be-added-in-the-future)
   * [Accessibility](#accessibility)
 
@@ -97,7 +97,6 @@ Google Fonts was utilized to incorporate the selected font styles into the websi
 I chose the fonts 'Courier Prime' and 'Space Mono' for the website. 'Courier Prime' was selected for titles and subtitles due to its monospaced formatting, which brings a sense of order and uniformity. On the other hand, 'Space Mono', also monospaced, features a modern and futuristic style, aligning with the theme of constellations. Both fonts were chosen for their high readability, essential for presenting information accurately and accessibly. Their technical and futuristic styles seamlessly integrate with the theme of space and astrology.
 
 ![ZodiacPairs fonts choosen](/assets/images/docs/fonts.png)  
-
 
 ### Imagery 
 
@@ -179,6 +178,12 @@ At the end of the game, a modal window is displayed, informing whether the playe
 
 ![ZodiacPairs final game lose](/assets/images/docs/lose.png)
 
+## Features and resources to be added in the future
+
+* Implement a ranking system to save the best scores of players.
+* Create an option for users to change the cards with other images related to the zodiac theme.
+* Add a level option to the game: easy, medium, and hard.
+
 ## Accessibility 
 
 From the project's inception, the game website's design was planned with a focus on accessibility. Special attention was given to ensure there was adequate color contrast, an easily comprehensible structure, and intuitive navigation. Additionally, practices of semantic HTML were implemented, establishing a robust foundation for the user experience.
@@ -188,8 +193,11 @@ From the project's inception, the game website's design was planned with a focus
 The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools.
 
   * Desktop
-![LightHouse - desktop](/assets/images/docs/lighthouse.png)  
+
+![LightHouse - desktop](/assets/images/docs/lighthouse.png)
+
   * Mobile
+  
 ![LightHouse - Mobile](/assets/images/docs/lignthouse-mobile.png)  
 
 ## Testing 
@@ -287,6 +295,9 @@ No errors were found during the validation process using the official JSHint, a 
 
 #### Solved Bugs
 
+*  I started the project using Love Running as the template structure for my website, where I used float to position the content on the page. However, when developing the services section, I encountered difficulties as the contents started to overlap. As a solution, I decided to restart the code using the Flexbox layout model. I also redesigned the navigation bar and footer to maintain consistency, making it easier to build responsive pages.
+
+* During one of my sessions with my mentor, Jubril, he noticed that the services page and the form were not adapting ideally to small mobile screens. To address this, he suggested removing elements one by one from the code using Google DevTools to pinpoint the issue. Upon identifying the problem, I adjusted the margins, padding, and max-width within the media queries, successfully resolving the issue.
 
 #### Unsolved Bugs
 
@@ -307,19 +318,11 @@ Visual Studio Code (VS Code): Utilized as a source code editor.
 
 Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
 
-[Adobe Express](https://www.adobe.com/br/express/feature/image/resize): Utilized for image manipulation and resizing.
-
-Paint: Used to edit the images. 
-
 [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): Employed to validate the correctness and compliance of CSS code. 
 
 [The official JSHint](https://jshint.com/): Used to identify issues in my Javascript code. 
 
 [GitHub](https://github.com/): Used to save and store the website files.
-
-[Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): Utilized to view the website's appearance and responsiveness across a range of devices.
-
-PowerPoint: Utilized to create the design for my game project.
 
 ## Deployment  
 
@@ -346,15 +349,13 @@ While working on the development of my game, there were occasions where I needed
 
 * [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.smashingmagazine.com/2021/10/object-fit-background-size-css/)
 
-* [FreeCodeCamp - Evento de clique em JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
+* [FreeCodeCamp - Click Event in JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
 
-* [Raul Esteves - Algoritmo de Fisher-Yates ](https://cssdeck.com/blog/implement-a-blur-or-filter-effect-on-an-image-using-css3/)
+* [Raul Esteves - Fisher-Yates Algorithm ](https://cssdeck.com/blog/implement-a-blur-or-filter-effect-on-an-image-using-css3/)
 
 * [w3schools - Window setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
 
 * [w3schools - JavaScript Timing Events](https://www.w3schools.com/js/js_timing.asp)
-
-* [JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 
 * [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): used as a resource for implementing flexible and responsive layouts on the website. 
 
@@ -368,15 +369,23 @@ I created the content on the website.
 
 ### Media
 
+PowerPoint: Utilized to create the design for my game project.
+
 [Canva](https://www.canva.com/): used to create the custom design of the memory card game.
 
-[Favicon.io](https://favicon.io/favicon-converter/): Utilized to convert the star image from the logo into a favicon.
+[Favicon.io](https://favicon.io/favicon-converter/): utilized to convert the star image from the logo into a favicon.
 
-[Logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): Utilized to create the logo. 
+[Adobe Express](https://www.adobe.com/br/express/feature/image/resize): utilized for image manipulation and resizing.
 
-[Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): Utilized to create the color palette. 
+Paint: used to edit the images. 
+
+[logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): utilized to create the logo. 
+
+[Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
 
 [Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the game website. 
+
+[Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
 
 ### Acknowledgments
 
