@@ -69,8 +69,6 @@ header {
     justify-content: space-between;
 }
 
-
-
 #game-stats-bottom {
     width: 1100px;
     background-color: #333;
@@ -97,7 +95,7 @@ button {
     padding: 5px;
     margin: 10px 10px 0 10px;
     transition: background-color 0.3s ease-in-out;
-    max-height: 2.275rem;
+    max-height: 2.7rem;
 }
 
 button:hover {

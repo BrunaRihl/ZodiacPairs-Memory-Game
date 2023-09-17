@@ -295,9 +295,15 @@ No errors were found during the validation process using the official JSHint, a 
 
 #### Solved Bugs
 
-*  I started the project using Love Running as the template structure for my website, where I used float to position the content on the page. However, when developing the services section, I encountered difficulties as the contents started to overlap. As a solution, I decided to restart the code using the Flexbox layout model. I also redesigned the navigation bar and footer to maintain consistency, making it easier to build responsive pages.
+*  During the project development, I encountered challenges while trying to set up a background image that would cover the entire page. The solution was to apply certain settings for the image directly to the <html> element instead of the <body>. This allowed the image to effectively fill the entire page, regardless of the browser's size.
 
-* During one of my sessions with my mentor, Jubril, he noticed that the services page and the form were not adapting ideally to small mobile screens. To address this, he suggested removing elements one by one from the code using Google DevTools to pinpoint the issue. Upon identifying the problem, I adjusted the margins, padding, and max-width within the media queries, successfully resolving the issue.
+![Solved bug - background image](/assets/images/docs/background-solved.png)
+
+* While working on the game development, I identified an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the game restart function, restartGame(), it was also necessary to utilize the innerText property by adding the '0'. This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
+
+![Solved bug - reset stats](/assets/images/docs/reset-solved.png)  
+
+* Despite using the Flexbox model for the game website development, I noticed a scrolling issue where the game was not adapting ideally to smaller mobile screens. To address this, I utilized Google Developer Tools to systematically remove elements one by one. This allowed me to pinpoint that the logo was causing this problem due to its size. As a solution, I added a smaller fixed size for it in the media queries, which effectively resolved the issue.
 
 #### Unsolved Bugs
 
@@ -347,6 +353,7 @@ While working on the development of my game, there were occasions where I needed
 
 * [FreeCodeCamp - How to clone an array in JavaScript](https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/)
 
+
 * [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.smashingmagazine.com/2021/10/object-fit-background-size-css/)
 
 * [FreeCodeCamp - Click Event in JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
@@ -357,6 +364,11 @@ While working on the development of my game, there were occasions where I needed
 
 * [w3schools - JavaScript Timing Events](https://www.w3schools.com/js/js_timing.asp)
 
+* [w3schools - JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+* [FreeCodeCamp - CSS Background Image Size Tutorial](https://www.freecodecamp.org/portuguese/news/tutorial-de-tamanho-de-imagem-de-fundo-em-css-como-inserir-uma-imagem-de-fundo-de-pagina-inteira/#:~:text=A%20magia%20acontece%20com%20a,caso%2C%20todo%20o%20html%20)
+
+
 * [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): used as a resource for implementing flexible and responsive layouts on the website. 
 
 * [README Example](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md): To write the README file, I followed the structure and table format (testing section) from the readme-examples repository by Kera Cudmore.
@@ -364,6 +376,7 @@ While working on the development of my game, there were occasions where I needed
 * The foundation of the website's was established using the CI Love Maths project as a starting point.
 
 ### Content
+
 I created the content on the website.
 * [Space](https://www.space.com/15722-constellations.html) and [Constellation Guide](https://www.constellation-guide.com/constellation-map/zodiac-constellations/): websites used as a source of research for content related to the constellations of the zodiac signs.
 

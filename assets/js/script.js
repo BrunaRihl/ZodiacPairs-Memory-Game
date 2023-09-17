@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
 const board = document.getElementById("board"); // Get the game board element.
-const signs = ["aries", "taurus"];
+const signs = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "pisces", "scorpio", "capricorn", "aquarius", "sagitarius", "libra"];
 const deck = [...signs, ...signs]; // Create a deck with pairs of zodiac signs.
 
 let flipped = false;
@@ -24,19 +24,19 @@ const openWindConst = document.getElementById('open-modal-const');
 const playGame = document.getElementById('play-game');
 const replayGame = document.getElementById('replay-game');
 
-closeWindWin.addEventListener('click', function() { closeModal('win'); });
-closeWindConst.addEventListener('click', function() { closeModal('vis-modal-const'); });
-closeWindRules.addEventListener('click', function() { closeModal('vis-modal-rules'); });
-openWindConst.addEventListener('click', function() { openModal('vis-modal-const'); });
-openWindRules.addEventListener('click', function() { openModal('vis-modal-rules'); });
-playGame.addEventListener('click', function() { restartGame(); });
-replayGame.addEventListener('click', function() { restartGame(); });
+closeWindWin.addEventListener('click', function () { closeModal('win'); });
+closeWindConst.addEventListener('click', function () { closeModal('vis-modal-const'); });
+closeWindRules.addEventListener('click', function () { closeModal('vis-modal-rules'); });
+openWindConst.addEventListener('click', function () { openModal('vis-modal-const'); });
+openWindRules.addEventListener('click', function () { openModal('vis-modal-rules'); });
+playGame.addEventListener('click', function () { restartGame(); });
+replayGame.addEventListener('click', function () { restartGame(); });
 
 /**
  * Function to build the game board 
  */
 function buildBoard(list) {
-    for(var index = 0; index< list.length; index++) {
+    for (var index = 0; index < list.length; index++) {
         board.insertAdjacentHTML(
             "beforeend",
             `<div class="card-back" data-name=${list[index]}></div>`
@@ -159,7 +159,7 @@ function randomCards(deck) {
 
 
 /** 
- * Function to restart game, time ans scores 
+ * Function to restart game, reset time and stats 
  */
 function restartGame() {
     document.getElementById("match").innerText = "0";
@@ -209,7 +209,7 @@ function resetChronometer() {
 
 
 /** 
- * Function to open the modal window
+ * Function to open the modal windows
  */
 function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
@@ -219,7 +219,7 @@ function openModal(loadModal) {
     document.getElementById("final-open").innerText = totalOpen;
     document.getElementById("final-time").innerText = seconds;
     document.getElementById("final-score").innerText = finalScore;
-    if (finalScore < 0) {  
+    if (finalScore < 0) {
         document.getElementById("final").innerText = 'You Lose :(';
     } else {
         document.getElementById("final").innerText = 'You Win!!!';
@@ -231,9 +231,9 @@ function openModal(loadModal) {
 
 
 /**
- * Function to close the modal window 
+ * Function to close the modal windows
  */
-function closeModal(exitModal) {        
+function closeModal(exitModal) {
     let modal = document.getElementById(exitModal);
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
