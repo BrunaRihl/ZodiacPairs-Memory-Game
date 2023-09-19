@@ -69,8 +69,6 @@ function flipCard(event) {
 
     checkForMatch();
 
-    document.getElementById("match").innerText = pairsMatch;
-    document.getElementById("unmatch").innerText = pairsUnmatch;
 }
 
 

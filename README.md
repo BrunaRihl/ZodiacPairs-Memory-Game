@@ -276,16 +276,19 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 ### Validator Testing  
 
 * HTML:  
+
 No errors were found during the validation process using the official W3C validator.  
 
 ![W3C validator - Index](/assets/images/docs/html-check.png) 
 
 * CSS:  
+
 No errors were found during the validation process using the official Jigsaw validator. 
 
 ![Jigsaw validator - Css](/assets/images/docs/css-validator.png)  
 
-* JavaScript:  
+* JavaScript: 
+ 
 No errors were found during the validation process using the official JSHint, a JavaScript Code Quality Tool.
 
 ![Jigsaw validator - Css](/assets/images/docs/jshint.png)  
@@ -295,15 +298,22 @@ No errors were found during the validation process using the official JSHint, a 
 
 #### Solved Bugs
 
-*  During the project development, I encountered challenges while trying to set up a background image that would cover the entire page. The solution was to apply certain settings for the image directly to the <html> element instead of the <body>. This allowed the image to effectively fill the entire page, regardless of the browser's size.
+* Backgrownd image
+
+During the project development, I encountered challenges while trying to set up a background image that would cover the entire page. The solution was to apply certain settings for the image directly to the <html> element instead of the <body>. This allowed the image to effectively fill the entire page, regardless of the browser's size.
 
 ![Solved bug - background image](/assets/images/docs/background-solved.png)
 
-* While working on the game development, I identified an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the game restart function, restartGame(), it was also necessary to utilize the innerText property by adding the '0'. This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
+*Reset game
+
+While working on the game development, I identified an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the game restart function, restartGame(), it was also necessary to utilize the innerText property by adding the '0'. This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
 
 ![Solved bug - reset stats](/assets/images/docs/reset-solved.png)  
 
-* Despite using the Flexbox model for the game website development, I noticed a scrolling issue where the game was not adapting ideally to smaller mobile screens. To address this, I utilized Google Developer Tools to systematically remove elements one by one. This allowed me to pinpoint that the logo was causing this problem due to its size. As a solution, I added a smaller fixed size for it in the media queries, which effectively resolved the issue.
+
+* Adapting Content for Small Screens
+
+Despite using the Flexbox model for the game website development, I noticed a scrolling issue where the game was not adapting ideally to smaller mobile screens. To address this, I utilized Google Developer Tools to systematically remove elements one by one. This allowed me to pinpoint that the logo was causing this problem due to its size. As a solution, I added a smaller fixed size for it in the media queries, which effectively resolved the issue.
 
 #### Unsolved Bugs
 
@@ -347,6 +357,7 @@ You can access the live website by clicking [here](https://brunarihl.github.io/Z
 ## Credits
 
 ### Code
+
 While working on the development of my game, there were occasions where I needed to conduct research that covered topics beyond the scope of the course or even required thorough revision. Below, I am sharing the links to the consulted sources:
 
 * [Dev - Javascript DOM manipulation cheatsheet](https://dev.to/m0nm/javascript-dom-manipulation-cheatsheet-1jkb)
@@ -392,7 +403,7 @@ PowerPoint: Utilized to create the design for my game project.
 
 Paint: used to edit the images. 
 
-[logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): utilized to create the logo. 
+[Logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): utilized to create the logo. 
 
 [Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
 
@@ -400,14 +411,4 @@ Paint: used to edit the images.
 
 [Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
 
-### Acknowledgments
 
-I want to express my gratitude to the individuals who provided assistance and support throughout the process of completing this project:
-
- * to my mentor, Jubril Akolade, for his valuable help and feedback;
-
- * to Laura Mayock, Cohort Facilitator from Code Institute, for always guiding our studies in the best possible way;
-
- * to my friends Ivan Frezza and Bruna Andelieri, who helped me by clarifying some doubts regarding my codes;
-
- * to my husband Jasser for his unwavering support and patience during my study period.
