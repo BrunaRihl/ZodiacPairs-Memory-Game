@@ -304,7 +304,7 @@ During the project development, I encountered challenges while trying to set up 
 
 ![Solved bug - background image](/assets/images/docs/background-solved.png)
 
-*Reset game
+* Reset game
 
 While working on the game development, I identified an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the game restart function, restartGame(), it was also necessary to utilize the innerText property by adding the '0'. This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
 
@@ -333,6 +333,8 @@ Visual Studio Code (VS Code): Utilized as a source code editor.
 [Font Awesome](https://fontawesome.com/): Incorporated to easily add icons across the website.
 
 Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
+
+[The W3C Markup Validation Service](https://validator.w3.org/): Used to validate the accuracy and validity of HTML code.
 
 [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): Employed to validate the correctness and compliance of CSS code. 
 
@@ -365,11 +367,11 @@ While working on the development of my game, there were occasions where I needed
 * [FreeCodeCamp - How to clone an array in JavaScript](https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/)
 
 
-* [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.smashingmagazine.com/2021/10/object-fit-background-size-css/)
+* [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/)
 
 * [FreeCodeCamp - Click Event in JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
 
-* [Raul Esteves - Fisher-Yates Algorithm ](https://cssdeck.com/blog/implement-a-blur-or-filter-effect-on-an-image-using-css3/)
+* [Raul Esteves - Fisher-Yates Algorithm ](https://raullesteves.medium.com/algoritmo-de-fisher-yates-para-embaralhamento-de-arrays-ba13a0542e88)
 
 * [w3schools - Window setInterval()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
 
