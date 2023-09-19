@@ -411,4 +411,14 @@ Paint: used to edit the images.
 
 [Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
 
+### Acknowledgments
 
+I would like to extend my sincere gratitude to the individuals who offered their assistance and support throughout the entirety of this project:
+
+Jubril Akolade, my mentor, for his guidance and constructive feedback.
+
+Laura Mayock, the Cohort Facilitator at Code Institute, for consistently steering our studies in the most effective direction.
+
+My friends Ivan Frezza and Bruna Andelieri, who provided invaluable insights and clarified uncertainties about my code.
+
+My husband Jasser, for always motivating me, for his unwavering support, and for his patience throughout my study period.
