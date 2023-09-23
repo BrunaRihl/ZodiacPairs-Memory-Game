@@ -33,7 +33,8 @@ playGame.addEventListener('click', function () { restartGame(); });
 replayGame.addEventListener('click', function () { restartGame(); });
 
 /**
- * Function to build the game board 
+ * Function to build the game board by populating it with 
+ * cards based on the provided list of data.
  */
 function buildBoard(list) {
     for (var index = 0; index < list.length; index++) {
@@ -49,7 +50,8 @@ function buildBoard(list) {
 
 
 /**
- * Function called when a card is clicked to flip card 
+ * Function called when a card is clicked to flip card, 
+ * manages the behavior of flipping cards during the memory game
  */
 function flipCard(event) {
 
@@ -73,7 +75,9 @@ function flipCard(event) {
 
 
 /**
- * Function to check if two flipped cards match 
+ * This function checks if two flipped cards match, 
+ * updates game statistics, 
+ * and ends the game if all pairs are matched.
  */
 function checkForMatch() {
     let isMatch = cardOne.dataset.name === cardTwo.dataset.name;
@@ -96,7 +100,10 @@ function checkForMatch() {
 
 
 /**
- * Function called when cards match 
+ * Function called when cards match,
+ * handles the behavior when two cards form a match.
+ * It removes the click event listener from both matched cards, 
+ * displays their data names, and resets the board for the next turn.
  */
 function match() {
     cardOne.removeEventListener('click', flipCard);
@@ -109,7 +116,11 @@ function match() {
 
 
 /** 
- * Function called when cards don't match. 
+ * Function called when cards don't match,
+ * It keeps track of the unmatched pairs, 
+ * temporarily prevents further interactions with the board, 
+ * and after a short delay, flips the cards back to their original state
+ * before resetting the board for the next turn.
  */
 function unmatch() {
     pairsUnmatch++;
@@ -124,7 +135,9 @@ function unmatch() {
 
 
 /** 
-*Function to prepare the board for the next turn 
+ * Function to prepare the board for the next turn,
+ * resets the game board state by clearing flipped status, 
+ * unlocking the board, and resetting card references.
 */
 function resetBoard() {
     flipped = false;
@@ -135,7 +148,9 @@ function resetBoard() {
 
 
 /** 
-* Function to initialize the game 
+ * Function to initialize the game,
+ * initializes a new game by clearing the board, generating a
+ * random list of cards from the deck, and building the game board.
 */
 function initGame() {
     board.innerHTML = '';
@@ -146,6 +161,8 @@ function initGame() {
 
 /**
  * Shuffles the deck of cards randomly 
+ * using the Fisher-Yates algorithm and 
+ * returns the shuffled deck.
  */
 function randomCards(deck) {
     for (let i = deck.length - 1; i > 0; i--) {
@@ -157,7 +174,9 @@ function randomCards(deck) {
 
 
 /** 
- * Function to restart game, reset time and stats 
+ * Function to restart game,
+ * resetting statistics, score, and chronometer.
+ * Initializes a new game and starts the chronometer.
  */
 function restartGame() {
     document.getElementById("match").innerText = "0";
@@ -173,7 +192,8 @@ function restartGame() {
 
 
 /**  
- * Function to start the timer 
+ * Function to start the timer
+ * starts the game timer if it is not already running.
  */
 function activateChronometer() {
     if (!timeRunning) {
@@ -185,7 +205,6 @@ function activateChronometer() {
     }
 }
 
-
 /**
  *  Function to stop the timer 
  */
@@ -194,9 +213,9 @@ function stopChronometer() {
     timeRunning = false;
 }
 
-
 /** 
  * Function to reset the timer
+ * resets the game timer to zero.
  */
 function resetChronometer() {
     clearInterval(timerGame);
@@ -207,7 +226,11 @@ function resetChronometer() {
 
 
 /** 
- * Function to open the modal windows
+ * Function to open the modal windows,
+ * opens a modal window displaying the final game statistics.
+ * calculates and displays the total number of opened pairs,
+ * elapsed time, and final score.
+ * Determines if the player won or lost the game based on the score.
  */
 function openModal(loadModal) {
     let modal = document.getElementById(loadModal);
@@ -229,7 +252,8 @@ function openModal(loadModal) {
 
 
 /**
- * Function to close the modal windows
+ * Function to close the modal windows.
+ * It uses the modal's ID for identification.
  */
 function closeModal(exitModal) {
     let modal = document.getElementById(exitModal);

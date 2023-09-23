@@ -48,7 +48,7 @@ The live demo is available at [here](https://brunarihl.github.io/ZodiacPairs-Mem
 
 ### Website overview 
 
-The 'ZodiacPairs' Memory Game is an original creation that immerses players in a captivating universe of zodiacal constellations. Every element of the game, including the selected images, has been designed to engulf the user in this atmosphere. This experience provides an interactive and enthralling view of the cosmos, encouraging players to delve into the rich mythology behind the zodiac signs while challenging their cognitive abilities.
+The ZodiacPairs Memory Game is an original creation that immerses players in a captivating universe of zodiacal constellations. Every element of the game, including the selected images, has been designed to engulf the user in this atmosphere. This experience provides an interactive and enthralling view of the cosmos, encouraging players to delve into the rich mythology behind the zodiac signs while challenging their cognitive abilities.
 
 ### User base
 
@@ -152,7 +152,7 @@ When clicked, one opens a modal window explaining the rules and scoring of the g
 
 ![ZodiacPairs info buttons](/assets/images/docs/info-const.png)
 
-### Play and Replay Buttons
+### Play and Restart Buttons
 
 * Following that, we have the 'Play' and 'Replay' buttons section. 
 * The 'Play' button has been prominently styled to emphasize its role as the central starting point for the user experience
