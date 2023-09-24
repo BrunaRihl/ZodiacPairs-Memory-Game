@@ -149,8 +149,9 @@ function resetBoard() {
 
 /** 
  * Function to initialize the game,
- * initializes a new game by clearing the board, generating a
- * random list of cards from the deck, and building the game board.
+ * initializes a new game by clearing the board,
+ * generating a random list of cards from the deck, and 
+ * building the game board.
 */
 function initGame() {
     board.innerHTML = '';

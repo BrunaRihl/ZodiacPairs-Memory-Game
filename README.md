@@ -1,11 +1,11 @@
 # ZodiacPairs
 
-In ZodiacPairs - Memory Game, visitors immerse themselves in the constellations of the zodiac signs. Here, they can enhance their memory and matching skills while exploring astronomical representations in an engaging and educational environment.
+In ZodiacPairs - Memory Game, visitors immerse themselves in the constellations of the zodiac signs. Here, they can enhance their memory and matching skills while exploring astrological and astronomical representations in an engaging environment.
 
 ![ZodiacPai website shown on a range of devices](/assets/images/docs/responsive.png)  
 
 ## Demo
-The live demo is available at [here](https://brunarihl.github.io/ZodiacPairs-Memory-Game/)!
+The live demo is available [here](https://brunarihl.github.io/ZodiacPairs-Memory-Game/)!
 
 ## Contents
 
@@ -73,7 +73,7 @@ The ZodiacPairs Memory Game is an original creation that immerses players in a c
 
  * Enabling Leisure: Enjoyable exploration of astrology and constellations for relaxation and amusement.
 
- * Provide Information: Offer engaging insights about constellations and zodiac signs.
+ * Provide Information: Offer insights about constellations and zodiac signs.
 
  * Create an Immersive Experience: Ensure the website's design and content deliver an attractive experience for visitors.
 
@@ -86,7 +86,7 @@ The ZodiacPairs Memory Game is an original creation that immerses players in a c
 
 ### Color palette
 
-Selected a color palette with shades of gray, white, black, and blue to capture the atmosphere of a starry sky and convey the sensation of contemplating constellations. The tones were chosen with the purpose of reflecting the beauty and serenity of the night sky. The contrast between soft colors and darker tones not only evoked the shimmering effect of a starry sky but also contributed to creating a pleasant visual experience, aiding in reading and navigation on the website.
+A color palette was selected, consisting of shades of gray, white, black, and blue, to capture the atmosphere of a starry sky and convey the sensation of contemplating constellations. The tones were chosen with the purpose of reflecting the beauty and serenity of the night sky. The contrast between soft colors and darker tones not only recreated the shimmering effect of a starry sky but also contributed to creating a pleasant visual experience, aiding in reading and navigation on the website.
 
 ![ZodiacPairs website color palette](/assets/images/docs/palette.png)  
 
@@ -118,7 +118,7 @@ The game website consists of only one initial page that starts with a header, bu
 
 ## Background
 
-High-resolution images, pertinent to the game's theme, were selected for the backgrounds. Tailored to various screen sizes, such as larger displays on computers or smaller ones on phones or tablets, distinct images were displayed for optimal fitting. This method was employed to elevate the visual experience, regardless of the device in use.
+High-resolution images, harmonizing with the game's theme, were chosen for the backgrounds. Tailored for an array of screen sizes, be it the expansive displays of computers or the more compact screens of smartphones and tablets, each image was curated to fit seamlessly. This approach was employed to elevate the visual experience, regardless of the device in use.
 
 ![ZodiacPairs backgrownd images - image hero](/assets/images/docs/sizes-bg.png)
 
@@ -251,7 +251,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | How to Play-hover | When hovering over the "How to Play" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over How to Play button | How to Play button transitions it to a gray color. | Pass |
 | Discover Zodiac Constellations-hover | When hovering over the "Discover Zodiac Constellation" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over Discover Zodiac Constellation button | Discover Zodiac Constellation button transitions it to a gray color. | Pass |
 | Restart-hover | When hovering over the "Restart" button, it transitions to a gray color, signifying its clickability and responsiveness. | Hover over Restart button | Restart button transitions it to a gray color. | Pass |
-| Restart Button clicked | When the 'Restart' button is pressed, all cards are flipped and shuffled, and the timer starts counting seconds | Clicked restar button | All cards are flipped and shuffled, and the timer starts counting seconds. | Pass |
+| Restart Button clicked | When the 'Restart' button is pressed, all cards are flipped and shuffled, and the timer starts counting seconds | Clicked restart button | All cards are flipped and shuffled, and the timer starts counting seconds. | Pass |
 | **`Cards`** |
 |  |  |  |  |  |
 | Card-clicked | When clicking on a card, it should flip to reveal the image. | Clicked card | Flip to reveal the image. | Pass |
@@ -262,7 +262,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Pairs Match | When pairs match, the "Match" adds 1 point. | Clicked two cards match | The "match" adds 1 point. | Pass |
 | Pairs Unmatch | When two cards do not match, the "Unmatch" adds 1 point. | Clicked two cards unmatch | The "Unmatch" adds 1 point. | Pass |
 | Score | The score starts at zero and changes according to the user's moves. Making a pair adds 50 points, while each unmatch deducts 10 points.| Clicking on the cards and attempting to find the pairs. | The score correctly changes according to the pairs. | Pass |
-| Time | The timer starts counting seconds as soon as the user presses 'Play' or 'Replay', and stops when all pairs are found.|  Left text boxes blank and send | Unable to submit, Tooltip informs that this field is required.| Pass |
+| Time | The timer is expected to start counting seconds as soon as the user presses 'Play' or 'Replay', and it should stop when all pairs are found.|  Pressed 'Play' or 'Replay', and finishing game| The timer starts counting seconds as soon as the user presses 'Play' or 'Replay', and stops when all pairs are found.| Pass |
 | Reset | The stats bar should reset to zero with each 'Play' or 'Restart' of the game. |  Finishing the game and pressing the 'Play/Restart' buttons. | Stats bar reset to zero| Pass |
 | **`Info-Modals`** |
 |  |  |  |  |  |
@@ -300,13 +300,13 @@ No errors were found during the validation process using the official JSHint, a 
 
 * Backgrownd image
 
-During the project development, I encountered challenges while trying to set up a background image that would cover the entire page. The solution was to apply certain settings for the image directly to the <html> element instead of the <body>. This allowed the image to effectively fill the entire page, regardless of the browser's size.
+During the project development, I encountered challenges while trying to set up a background image that would cover the entire page. The solution was to apply certain settings for the image directly to the < html > element instead of the < body >. This allowed the image to effectively fill the entire page, regardless of the browser's size.
 
 ![Solved bug - background image](/assets/images/docs/background-solved.png)
 
 * Reset game
 
-While working on the game development, I identified an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the game restart function, restartGame(), it was also necessary to utilize the innerText property by adding the '0'. This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
+While working on the game development, I encountered an issue where the game status wasn't resetting properly upon finishing a match and requesting to play again. After some attempts, I realized that in addition to resetting the variable values to zero within the restartGame() function, it was also necessary to utilize the innerText property by adding the '0'(zero). This property proved to be crucial in directly inserting the zeroed values into the interface every time the game was restarted.
 
 ![Solved bug - reset stats](/assets/images/docs/reset-solved.png)  
 
@@ -366,7 +366,6 @@ While working on the development of my game, there were occasions where I needed
 
 * [FreeCodeCamp - How to clone an array in JavaScript](https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/)
 
-
 * [FreeCodeCamp - How to Build a Modal with JavaScript](https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/)
 
 * [FreeCodeCamp - Click Event in JavaScript](https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/)
@@ -380,7 +379,6 @@ While working on the development of my game, there were occasions where I needed
 * [w3schools - JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 
 * [FreeCodeCamp - CSS Background Image Size Tutorial](https://www.freecodecamp.org/portuguese/news/tutorial-de-tamanho-de-imagem-de-fundo-em-css-como-inserir-uma-imagem-de-fundo-de-pagina-inteira/#:~:text=A%20magia%20acontece%20com%20a,caso%2C%20todo%20o%20html%20)
-
 
 * [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): used as a resource for implementing flexible and responsive layouts on the website. 
 
@@ -403,7 +401,7 @@ PowerPoint: Utilized to create the design for my game project.
 
 [Adobe Express](https://www.adobe.com/br/express/feature/image/resize): utilized for image manipulation and resizing.
 
-Paint: used to edit the images. 
+MS Paint: used to edit the images. 
 
 [Logo](https://logo.shapefactory.co/?a=3EBDF8&b=7661C5): utilized to create the logo. 
 
@@ -421,6 +419,6 @@ Jubril Akolade, my mentor, for his guidance and constructive feedback.
 
 Laura Mayock, the Cohort Facilitator at Code Institute, for consistently steering our studies in the most effective direction.
 
-My friends Ivan Frezza and Bruna Andelieri, who provided invaluable insights and clarified uncertainties about my code.
+My friends Ivan Frezza and Bruna Andelieri, who provided valuable insights and clarified uncertainties about my code.
 
 My husband Jasser, for always motivating me, for his unwavering support, and for his patience throughout my study period.
